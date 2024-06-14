@@ -9,7 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        sans: ['Inter Tight', 'ui-sans-serif', 'system-ui'],
+      },
     },
   },
   plugins: [],
