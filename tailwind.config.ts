@@ -17,6 +17,9 @@ const config: Config = {
           800: '#34343D',
           400: '#ABABB4',
           300: '#CCCCD4',
+        },
+        green: {
+          available: '#22C55E',
         }
       },
       spacing: {
