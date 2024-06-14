@@ -17,7 +17,10 @@ const config: Config = {
           800: '#34343D',
           300: '#CCCCD4',
         }
-      }
+      },
+      spacing: {
+        '400': '400px',
+      },
     },
   },
   plugins: [],
