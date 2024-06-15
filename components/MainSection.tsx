@@ -23,10 +23,14 @@ function MainSection() {
       <div className='font-regular text-grey-800'>
         In my free time, 
         <span className='font-medium'> I support early stage founders in <span className='border-b-2 border-grey-300 hover:border-grey-800'>bringing their visions to life.</span></span>
-        <span className='font-medium text-green-available'> 2 spots left</span>
+        <span className="relative inline-flex h-3 w-3 mx-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-available opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-available"></span>
+          </span>
+        <span className='font-medium text-green-available'>2 spots left</span>
+        <div className="border-t bg-gray-300 w-full my-14"></div>
       </div>
     </section>
-
   )
 }
 
