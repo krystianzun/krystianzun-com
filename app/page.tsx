@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import MainSection from "@/components/MainSection";
+import ProjectsSection from "@/components/ProjectsSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <div className="w-full max-w-400 flex-none">
           <HeroSection/>
           <MainSection/>
+          <ProjectsSection />
         </div>
         <div className="hidden md:flex flex-grow justify-center">
           Right column
