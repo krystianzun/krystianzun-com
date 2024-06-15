@@ -19,7 +19,9 @@ function ProjectsSection() {
         <div className='pb-8'>
             <p className='pb-4'>and subscribe to my newsletter↗ where I share my learnings, ideas and links to anything I've found interesting</p>
             <div>
-
+                {/* 
+                    place for input and button to subscribe 
+                */} 
             </div>
         </div>
         <p>I love meeting new people, feel free to drop me a line at krystian.zun@gmail.com *:･ﾟ</p>
