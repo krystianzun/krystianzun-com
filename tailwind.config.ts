@@ -15,6 +15,7 @@ const config: Config = {
       colors: {
         grey: {
           800: '#34343D',
+          500: '#8E8E93',
           400: '#ABABB4',
           300: '#CCCCD4',
         },
