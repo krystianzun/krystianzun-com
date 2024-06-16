@@ -25,15 +25,27 @@ function ProjectsSection() {
             </h1>
             <p className='text-grey-500'>Fun, informal meet-up where we chat about XR and creative tech in the great outdoors, immersed in the best reality (nature) ٩( ✩’ω`✩ )و</p>    
         </div> 
-        <div className='pb-8'>
-            <p className='pb-4'>and subscribe to my newsletter↗ where I share my learnings, ideas and links to anything I've found interesting</p>
+        <div className='pb-8 text-grey-800'>
+            <p className='pb-4'>and 
+                <span className='group text-grey-800'>
+                    <span>&nbsp;</span>
+                    <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>subscribe to my newsletter</span>
+                    <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
+                </span> where I share my learnings, ideas and links to anything I've found interesting
+            </p>
             <div>
                 {/* 
                     place for input and button to subscribe 
                 */} 
             </div>
         </div>
-        <p>I love meeting new people, feel free to drop me a line at krystian.zun@gmail.com *:･ﾟ</p>
+        <p className='text-grey-800'>I love meeting new people, feel free to drop me a line at
+            <span className='group text-grey-800'>
+                <span>&nbsp;</span>
+                <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>krystian.zun@gmail.com</span>
+                <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
+            </span> *:･ﾟ
+        </p>
         <div className="border-t bg-gray-300 w-full my-14"></div>
     </section>
   )
