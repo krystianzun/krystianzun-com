@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function NowSection() {
   return (
@@ -15,7 +16,7 @@ function NowSection() {
         <p className='pb-4 text-grey-500'>Reading
             <span className='group text-grey-800'>
                 <span>&nbsp;</span>
-                <span className='border-b-2 border-grey-300 hover:border-grey-800'>The Millionaire Fastlane by MJ DeMarco</span>
+                <span className='border-b-2 border-grey-300 hover:border-grey-800'><Link href={"https://www.youtube.com/"}>The Millionaire Fastlane by MJ DeMarco</Link></span>
                 <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
             </span>
         </p>
