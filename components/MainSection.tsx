@@ -10,12 +10,16 @@ function MainSection() {
         Currently, I’m leading design practice at
         <span className='group'>
           <span>&nbsp;</span>
-          <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>Superbright</span>
+          <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
+            <a href="https://www.superbright.me/" target="_blank" rel="noopener noreferrer">Superbright</a>
+          </span>
           <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
         </span> & <span className='hidden md:inline-block'><br/></span>
         <span className='group'>
           <span>&nbsp;</span>
-          <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>Vortic</span>
+          <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
+            <a href="https://vortic.art/discover" target="_blank" rel="noopener noreferrer">Vortic</a>
+          </span>
           <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
         </span> focused on spatial & immersive experiences.
       </p>
