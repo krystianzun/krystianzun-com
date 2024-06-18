@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState } from 'react'
+import CopyEmail from './CopyEmail'
 
 function ProjectsSection() {
   return (
@@ -50,7 +52,7 @@ function ProjectsSection() {
         <p className='text-grey-800'>I love meeting new people, feel free to drop me a line at
             <span className='group text-grey-800'>
                 <span>&nbsp;</span>
-                <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>krystian.zun@gmail.com</span>
+                <CopyEmail />
                 <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
             </span> *:･ﾟ
         </p>
