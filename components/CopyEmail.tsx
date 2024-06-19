@@ -24,7 +24,7 @@ function CopyEmail() {
           krystian.zun@gmail.com
         </span>
         {copySuccess && (
-          <span className="absolute left-0 mt-1 text-sm text-green-500">
+          <span className="bg-grey-800 absolute left-0 mb-4 text-sm text-white p-1">
             {copySuccess}
           </span>
         )}
