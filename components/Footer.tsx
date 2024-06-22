@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const links = [
   { name: "Resume",
@@ -29,7 +30,11 @@ function Footer() {
         <div>
           {links.map((item, idx) => {
             return (
-              <p key={idx}>{item.name}</p>
+              <div key={idx}>
+                <Link href={item.link} target="_blank">
+                  <p>{item.name}</p>
+                </Link>
+              </div>
             )
           })}
         </div>
