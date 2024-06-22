@@ -4,7 +4,7 @@ import Link from 'next/link'
 function NowSection() {
   return (
     <section>
-        <h1 className='pb-4 text-grey-800 font-medium'>Now,</h1>
+        <h3 className='pb-4 text-grey-800 font-medium'>Now,</h3>
         <p className='pb-4'>If not I’m not designing, I like moving heavy weights, running and travelling (a lot, over 180 days last year).</p>
         <p className='pb-4'>Listening to
              <span className='group text-grey-800'>
