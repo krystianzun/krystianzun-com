@@ -32,7 +32,7 @@ function MainSection() {
           </span>
         <span className='font-medium text-green-available'>2 spots left</span>
       </p>
-      <div className="border-t bg-gray-300 w-full my-14"></div>
+      <hr className="w-full h-px bg-gray-300 border-0 my-14"></hr>
     </section>
   )
 }

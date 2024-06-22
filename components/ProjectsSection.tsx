@@ -5,7 +5,7 @@ import CopyEmail from './CopyEmail'
 function ProjectsSection() {
   return (
     <section>
-         <h1 className='pb-4 text-grey-800 font-medium'>Recently,</h1>
+        <h1 className='pb-4 text-grey-800 font-medium'>Recently,</h1>
         <div className='pb-8'>
             <h1 className='group text-grey-800'>
                 <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
@@ -56,7 +56,7 @@ function ProjectsSection() {
                 <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
             </span> *:･ﾟ
         </p>
-        <div className="border-t bg-gray-300 w-full my-14"></div>
+        <hr className="w-full h-px bg-gray-300 border-0 my-14"></hr>
     </section>
   )
 }

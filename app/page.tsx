@@ -1,4 +1,5 @@
 import DividerSection from "@/components/DividerSection";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import MainSection from "@/components/MainSection";
 import NowSection from "@/components/NowSection";
@@ -19,7 +20,7 @@ export default function Home() {
           Right column
         </div>
       </div>
-      <DividerSection />
+      <Footer />
 
     </main>
   );
