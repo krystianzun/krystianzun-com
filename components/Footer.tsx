@@ -27,12 +27,12 @@ function Footer() {
     <footer>
         <hr className='w-full h-px bg-gray-300 border-0 my-14'></hr>
         <h3 className='pb-4 text-grey-800 font-medium'>Links</h3>
-        <div>
+        <div className='space-y-1'>
           {links.map((item, idx) => {
             return (
               <div key={idx}>
                 <Link href={item.link} target="_blank">
-                  <p>{item.name}</p>
+                  <p className='text-grey-500 hover:text-grey-800'>{item.name}</p>
                 </Link>
               </div>
             )
