@@ -1,14 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import illitMagnetic from '@/public/images/illit-magnetic.jpg';
 
 function NowSection() {
   return (
     <section>
         <h3 className='pb-4 text-grey-800 font-medium'>Now,</h3>
         <p className='pb-4'>If not I’m not designing, I like moving heavy weights, running and travelling (a lot, over 180 days last year).</p>
-        <p className='pb-4'>Listening to
+        <p className='pb-4 flex'>Listening to
+            <Image src={illitMagnetic} alt="" width={24} height={24} className='mx-2 rounded'/>
              <span className='group text-grey-800'>
-                <span>&nbsp;</span>
                 <span className='border-b-2 border-grey-300 hover:border-grey-800'>
                     <a href="https://www.youtube.com/watch?v=Vk5-c_v4gMU" target="_blank" rel="noopener noreferrer">Magnetic - ILLIT (아일릿)</a>
                 </span>
