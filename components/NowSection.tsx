@@ -26,7 +26,7 @@ function NowSection() {
                 <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
             </span>
         </p>
-        <p className='pb-4 text-grey-500'>Preparing for a <span className='text-grey-800'>road trip around Croatia, Bosnia and Herzegovina, and Montenegro</span></p>
+        <p className='pb-4 text-grey-500'>Preparing for a <span className='text-grey-800'>road trip around Croatia, Bosnia, and Montenegro</span></p>
     </section>
   )
 }
