@@ -8,7 +8,7 @@ function HeroSection() {
           (ﾉ◕ヮ◕)ﾉ *:･ﾟ
         </h1>
         <h2 className='font-medium text-grey-800'>
-          hello there! *✲ﾟ*, i’m Krystian 
+          hello there! *✲ﾟ*, i&apos;mm Krystian 
         </h2>
       </div>
     </section>

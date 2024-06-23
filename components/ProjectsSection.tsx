@@ -31,7 +31,7 @@ function ProjectsSection() {
                 </span>
                 <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
             </h4>
-            <p className='text-grey-500'>Fun, informal meet-up where we chat about XR and creative tech in the great outdoors, immersed in the best reality (nature) ٩( ✩’ω`✩ )و</p>    
+            <p className='text-grey-500'>Fun, informal meet-up where we chat about XR and creative tech in the great outdoors, immersed in the best reality (nature) ٩( ✩&apos;ω&apos;✩ )و</p>    
         </div> 
         <div className='pb-8 text-grey-800'>
             <p className='pb-4'>and 
@@ -41,7 +41,7 @@ function ProjectsSection() {
                         <a href="https://krystianzun.substack.com/" target="_blank" rel="noopener noreferrer">subscribe to my newsletter</a>
                     </span>
                     <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
-                </span> where I share my learnings, ideas and links to anything I've found interesting
+                </span> where I share my learnings, ideas and links to anything I&apos;ve found interesting
             </p>
             <div>
                 {/* 

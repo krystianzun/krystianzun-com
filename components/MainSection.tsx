@@ -7,7 +7,7 @@ function MainSection() {
         A product designer and maker in love with building and shipping products that provide value.
       </p>
       <p className='font-regular text-grey-800'>
-        Currently, I’m leading design practice at
+        Currently, i&apos;m leading design practice at
         <span className='group'>
           <span>&nbsp;</span>
           <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>

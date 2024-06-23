@@ -7,7 +7,7 @@ function NowSection() {
   return (
     <section>
         <h3 className='pb-4 text-grey-800 font-medium'>Now,</h3>
-        <p className='pb-4'>If not I’m not designing, I like moving heavy weights, running and travelling (a lot, over 180 days last year).</p>
+        <p className='pb-4'>If not I&apos;m not designing, I like moving heavy weights, running and travelling (a lot, over 180 days last year).</p>
         <p className='pb-4 flex'>Listening to
             <Image src={illitMagnetic} alt="" width={24} height={24} className='mx-2 rounded'/>
              <span className='group text-grey-800'>
