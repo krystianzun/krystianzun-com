@@ -38,7 +38,7 @@ function Footer() {
             )
           })}
         </div>
-        <div className='text-grey-500 my-14'>©2024 Krystian Zun, London & New York </div>
+        <div className='text-grey-500 mt-14'>©2024 Krystian Zun, London & New York </div>
     </footer>
   )
 }

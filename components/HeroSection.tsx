@@ -8,7 +8,7 @@ function HeroSection() {
           (ﾉ◕ヮ◕)ﾉ *:･ﾟ
         </h1>
         <h2 className='font-medium text-grey-800'>
-          <span className='border-b-2 border-grey-300 hover:border-grey-800'>hello there!</span> *✲ﾟ*, i’m Krystian 
+          hello there! *✲ﾟ*, i’m Krystian 
         </h2>
       </div>
     </section>
