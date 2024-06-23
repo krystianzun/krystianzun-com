@@ -12,7 +12,7 @@ function NowSection() {
             <Image src={illitMagnetic} alt="" width={24} height={24} className='mx-2 rounded'/>
              <span className='group text-grey-800'>
                 <span className='border-b-2 border-grey-300 hover:border-grey-800'>
-                    <a href="https://www.youtube.com/watch?v=Vk5-c_v4gMU" target="_blank" rel="noopener noreferrer">Magnetic - ILLIT (아일릿)</a>
+                    <a href="https://www.youtube.com/watch?v=Vk5-c_v4gMU" target="_blank" rel="noopener noreferrer">Magnetic - ILLIT</a>
                 </span>
                 <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
             </span> on repeat
