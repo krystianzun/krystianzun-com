@@ -1,5 +1,4 @@
 import React from 'react'
-import HoverImage from './HoverImage'
 
 function HeroSection() {
   return (
@@ -11,7 +10,6 @@ function HeroSection() {
         <h2 className='font-medium text-grey-800'>
           <span className='border-b-2 border-grey-300 hover:border-grey-800'>hello there!</span> *✲ﾟ*, i’m Krystian 
         </h2>
-        <HoverImage/>
       </div>
     </section>
   )
