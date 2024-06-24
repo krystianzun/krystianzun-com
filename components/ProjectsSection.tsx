@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import CopyEmail from './CopyEmail'
+import CopyText from './CopyText'
 
 function ProjectsSection() {
   return (
@@ -52,9 +53,14 @@ function ProjectsSection() {
         <p className='text-grey-800'>I love meeting new people, feel free to drop me a line at
             <span className='group text-grey-800'>
                 <span>&nbsp;</span>
-                <CopyEmail />
-                <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
-            </span> *:･ﾟ
+                <span className='border-b-2 border-gray-300 hover:border-gray-800 cursor-pointer inline-block font-medium'>
+                    <CopyText 
+                            text="krystian.zun@gmail.com"
+                            displayText='krystian.zun@gmail.com'
+                            hoverMessage='Click to copy'
+                    />
+                </span>
+                </span> *:･ﾟ
         </p>
         <hr className="w-full h-px bg-gray-300 border-0 my-14"></hr>
     </section>

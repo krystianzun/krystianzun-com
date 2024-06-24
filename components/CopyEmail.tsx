@@ -19,7 +19,7 @@ const CopyEmail = () => {
     };
   
     return (
-      <div className="relative inline-block group">
+      <span className="relative inline-block group">
         <span
           className="border-b-2 border-gray-300 group-hover:border-gray-800 cursor-pointer font-medium transition-colors duration-200"
           onClick={copyToClipboard}
@@ -38,7 +38,7 @@ const CopyEmail = () => {
             {copyStatus}
           </span>
         )}
-      </div>
+      </span>
     );
 }
 
