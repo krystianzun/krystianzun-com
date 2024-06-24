@@ -6,7 +6,21 @@ const inter = Inter_Tight({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Krystian Zun",
-  description: "Krystian Zun, Product Designer",
+  description: "Product designer and maker in love with building and shipping products that provide value.",
+  openGraph: {
+    title: "Krystian Zun",
+    description: "Product designer and maker in love with building and shipping products that provide value.",
+    images: [
+      {
+        url: "/images/kzcom-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Krystian Zun - Product Designer and Maker",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
