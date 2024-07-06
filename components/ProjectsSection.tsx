@@ -10,6 +10,15 @@ function ProjectsSection() {
         <div className='pb-8'>
             <h4 className='group text-grey-800'>
                 <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
+                    <a href="https://www.xrjobsboard.com/" target="_blank" rel="noopener noreferrer">XR Jobs Board</a>
+                </span>
+                <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
+            </h4>
+            <p className='text-grey-500'>Stop wasting time searching through countless job portals. All XR jobs and opportunities in one place.</p>    
+        </div>  
+        <div className='pb-8'>
+            <h4 className='group text-grey-800'>
+                <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
                     <a href="https://krystianzun.gumroad.com/l/xrdesignroadmap" target="_blank" rel="noopener noreferrer">XR Design Learning Roadmap</a>
                 </span>
                 <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
