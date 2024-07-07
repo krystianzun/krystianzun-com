@@ -15,9 +15,11 @@ const config: Config = {
       colors: {
         grey: {
           800: '#34343D',
+          600: '#696972',
           500: '#8E8E93',
           400: '#ABABB4',
           300: '#CCCCD4',
+          200: '#E2E2E8',
         },
         green: {
           available: '#22C55E',

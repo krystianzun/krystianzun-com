@@ -8,12 +8,17 @@ function ProjectsSection() {
     <section>
         <h3 className='pb-4 text-grey-800 font-medium'>Recently,</h3>
         <div className='pb-8'>
-            <h4 className='group text-grey-800 mb-1'>
-                <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
-                    <a href="https://www.xrjobsboard.com/" target="_blank" rel="noopener noreferrer">XR Jobs Board</a>
-                </span>
-                <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
-            </h4>
+            <div className='mb-1 flex space-x-2'>
+                <h4 className='group text-grey-800'>
+                    <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
+                        <a href="https://www.xrjobsboard.com/" target="_blank" rel="noopener noreferrer">XR Jobs Board</a>
+                    </span>
+                    <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
+                </h4>
+                <div className='px-2 py-0.5 bg-grey-200 rounded-sm text-sm text-grey-600 font-medium'>
+                    Currently Building
+                </div>
+            </div>
             <p className='text-grey-500'>Stop wasting time searching through countless job portals. All XR jobs and opportunities in one place.</p>    
         </div>  
         <div className='pb-8'>
