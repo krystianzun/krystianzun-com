@@ -8,7 +8,7 @@ function ProjectsSection() {
     <section>
         <h3 className='pb-4 text-grey-800 font-medium'>Recently,</h3>
         <div className='pb-8'>
-            <h4 className='group text-grey-800'>
+            <h4 className='group text-grey-800 mb-1'>
                 <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
                     <a href="https://www.xrjobsboard.com/" target="_blank" rel="noopener noreferrer">XR Jobs Board</a>
                 </span>
@@ -17,7 +17,7 @@ function ProjectsSection() {
             <p className='text-grey-500'>Stop wasting time searching through countless job portals. All XR jobs and opportunities in one place.</p>    
         </div>  
         <div className='pb-8'>
-            <h4 className='group text-grey-800'>
+            <h4 className='group text-grey-800 mb-1'>
                 <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
                     <a href="https://krystianzun.gumroad.com/l/xrdesignroadmap" target="_blank" rel="noopener noreferrer">XR Design Learning Roadmap</a>
                 </span>
@@ -26,7 +26,7 @@ function ProjectsSection() {
             <p className='text-grey-500'>Step-by-step, comprehensive guide to all essential skills to design extended realities.</p>    
         </div>  
         <div className='pb-8'>
-            <h4 className='group text-grey-800'>
+            <h4 className='group text-grey-800 mb-1'>
                 <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
                     <a href="https://discord.com/invite/eUKt8mFqnb" target="_blank" rel="noopener noreferrer">Design Futures</a>
                 </span>
@@ -35,7 +35,7 @@ function ProjectsSection() {
             <p className='text-grey-500'>Community for all into XR, Design, 3D, AI and generally emerging and creative tech with weekly hang outs, world hopping sessions and themed discussions.</p>    
         </div> 
         <div className='pb-8'>
-            <h4 className='group text-grey-800'>
+            <h4 className='group text-grey-800 mb-1'>
                 <span className='border-b-2 border-grey-300 hover:border-grey-800 font-medium'>
                     <a href="https://lu.ma/touchsomegrass" target="_blank" rel="noopener noreferrer">Touch Some Grass*</a>
                 </span>
