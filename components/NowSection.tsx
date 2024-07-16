@@ -15,7 +15,7 @@ function NowSection() {
                     <a href="https://www.youtube.com/watch?v=hbcGx4MGUMg" target="_blank" rel="noopener noreferrer">LISA - Rockstar</a>
                 </span>
                 <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
-            </span> on repeat
+            </span><span>&nbsp;</span>on repeat
         </p>
         <p className='pb-4 text-grey-500'>Reading
             <span className='group text-grey-800'>
