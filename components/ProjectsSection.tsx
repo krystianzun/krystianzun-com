@@ -15,7 +15,7 @@ function ProjectsSection() {
                     </span>
                     <span className='text-grey-400 group-hover:text-grey-800 font-medium'>&#x2197;</span>
                 </h4>
-                <div className='px-2 py-0.5 bg-grey-200 rounded-sm text-sm text-grey-600 font-medium'>
+                <div className='px-2 py-0.5 bg-green-100 rounded-sm text-sm text-green-900 font-medium'>
                     Currently Building
                 </div>
             </div>
