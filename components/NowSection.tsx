@@ -64,7 +64,7 @@ function NowSection() {
           <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
         </span>
       </p>
-      <p className="text-sm text-grey-500">Last update: 16.07.24</p>
+      <p className="text-sm text-grey-500">Last update: 31.07.24</p>
     </section>
   );
 }
