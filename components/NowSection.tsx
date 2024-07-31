@@ -54,10 +54,14 @@ function NowSection() {
           </span>
         </span>
       </p>
-      <p className="pb-8 text-grey-500">
-        Preparing for a{" "}
-        <span className="text-grey-800">
-          road trip around Croatia, Bosnia, and Montenegro
+      <p className="font-regular text-grey-500 pb-8">
+        Travelling{" "}
+        <span className="font-regular text-grey-800">
+          around Croatia, Bosnia, and Montenegro
+        </span>
+        <span className="relative inline-flex h-3 w-3 mx-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
         </span>
       </p>
       <p className="text-sm text-grey-500">Last update: 16.07.24</p>
