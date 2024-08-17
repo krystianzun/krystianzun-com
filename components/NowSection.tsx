@@ -55,16 +55,17 @@ function NowSection() {
         </span>
       </p>
       <p className="font-regular text-grey-500 pb-8">
-        Travelling{" "}
+        Planning a{" "}
         <span className="font-regular text-grey-800">
-          around Croatia, Bosnia, and Montenegro
+          trip around Jordan with my grandpa
         </span>
-        <span className="relative inline-flex h-3 w-3 mx-2">
+        {/* Pullsing dot */}
+        {/* <span className="relative inline-flex h-3 w-3 mx-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400"></span>
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-        </span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span> 
+        </span>*/}
       </p>
-      <p className="text-sm text-grey-500">Last update: 31.07.24</p>
+      <p className=" text-grey-500">Last update: 17.08.24</p>
     </section>
   );
 }
