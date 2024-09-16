@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const inter = Inter_Tight({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Krystian Zun",
-  description: "Product designer and maker in love with building and shipping products that provide value.",
+  description:
+    "Product designer and maker in love with building and shipping products that provide value.",
   openGraph: {
     title: "Krystian Zun",
-    description: "Product designer and maker in love with building and shipping products that provide value.",
+    description:
+      "Product designer and maker in love with building and shipping products that provide value.",
     images: [
       {
         url: "/images/kzcom-preview.png",
@@ -34,7 +36,13 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>"/>
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>"
+        />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="6a880c35-a420-485e-b9c9-f271cf077680"
+        ></script>
       </head>
       <body className="antialiased">
         {children}
