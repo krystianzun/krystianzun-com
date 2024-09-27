@@ -131,8 +131,7 @@ function ProjectsSection() {
               hoverMessage="Click to copy"
             />
           </span>
-        </span>{" "}
-        *:･ﾟ
+        </span>
       </p>
       <hr className="w-full h-px bg-gray-300 border-0 my-14"></hr>
     </section>
