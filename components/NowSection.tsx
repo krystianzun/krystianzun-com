@@ -12,60 +12,13 @@ function NowSection() {
         travelling (a lot, over 180 days last year).
       </p>
       <p className="pb-4 flex text-grey-500">
-        Listening to
-        <Image
-          src={lisaRockstar}
-          alt=""
-          width={24}
-          height={24}
-          className="mx-2 rounded"
-        />
-        <span className="group text-grey-800">
-          <span className="border-b-2 border-grey-300 hover:border-grey-800">
-            <a
-              href="https://www.youtube.com/watch?v=hbcGx4MGUMg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LISA - Rockstar
-            </a>
-          </span>
-          <span className="text-grey-400 group-hover:text-grey-800 font-medium">
-            &#x2197;
-          </span>
-        </span>
-        <span>&nbsp;</span>on repeat
-      </p>
-      <p className="pb-4 text-grey-500">
-        Reading
-        <span className="group text-grey-800">
-          <span>&nbsp;</span>
-          <span className="border-b-2 border-grey-300 hover:border-grey-800">
-            <a
-              href="https://noahkagan.com/mdwbook/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Million Dollar Weekend by Noah Kagan
-            </a>
-          </span>
-          <span className="text-grey-400 group-hover:text-grey-800 font-medium">
-            &#x2197;
-          </span>
+        Currently{" "}
+        <span className="ml-2 text-grey-800">
+          。･:*:･°˖✧◝ rebooting ◜✧˖°･:*:･。.
         </span>
       </p>
-      <p className="font-regular text-grey-500 pb-8">
-        Planning a{" "}
-        <span className="font-regular text-grey-800">
-          trip around Jordan with my grandpa
-        </span>
-        {/* Pullsing dot */}
-        {/* <span className="relative inline-flex h-3 w-3 mx-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400"></span>
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span> 
-        </span>*/}
-      </p>
-      <p className=" text-grey-500">Last update: 17.08.24</p>
+
+      <p className=" text-grey-500">Last update: 06.10.24</p>
     </section>
   );
 }
