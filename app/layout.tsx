@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: "Krystian Zun",
   description:
     "Product designer and maker in love with building and shipping products that provide value.",
+
+  metadataBase: new URL("https://www.krystianzun.com/"),
   openGraph: {
     title: "Krystian Zun",
     description:
