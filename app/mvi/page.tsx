@@ -4,7 +4,7 @@ const MviPage = () => {
   return (
     <main className="mb-32 mt-24">
       <section className="m-auto flex max-w-md flex-col gap-12 text-primary text-lg lowercase">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <h1 className="text-2xl font-medium">
             validate your idea by end of the week
           </h1>
@@ -23,7 +23,7 @@ const MviPage = () => {
           </button>
           <p className="text-grey-600 text-sm">5 – 7 days</p>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <h3 className="text-xl font-medium">How?</h3>
           <p>
             I partner with founders and startup and offer a shortcut to learn
@@ -34,6 +34,11 @@ const MviPage = () => {
             by designing, prototyping, and testing ideas with your real
             customers.
           </p>
+        </div>
+        <div className="flex flex-col gap-6">
+          <h3 className="text-xl font-medium">
+            In just a few days, we&apos;ll:
+          </h3>
         </div>
       </section>
     </main>
