@@ -1,6 +1,11 @@
 import React from "react";
 import Verified from "@/components/icons/Verified";
 import Cross from "@/components/icons/Cross";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: "noindex, nofollow",
+};
 
 const MviPage = () => {
   return (
