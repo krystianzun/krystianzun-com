@@ -22,8 +22,8 @@ function ProjectsSection() {
               &#x2197;
             </span>
           </h4>
-          <div className="px-2 py-0.5 bg-green-100 rounded-sm text-sm text-green-900 font-medium">
-            Currently Building
+          <div className="px-2 py-0.5 bg-purple-100 rounded-sm text-sm text-purple-900 font-medium">
+            On Hiatus
           </div>
         </div>
         <p className="text-grey-500">
