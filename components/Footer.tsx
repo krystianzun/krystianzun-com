@@ -35,7 +35,7 @@ function Footer() {
         />
       </div>
       <div className="text-grey-500 mt-14">
-        ©{new Date().getFullYear()} Krystian Zun, London & New York{" "}
+        ©{new Date().getFullYear()} Krystian Zun, London{" "}
       </div>
     </footer>
   );
