@@ -47,17 +47,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body className="antialiased">
-        <div
-          style={{
-            background: "#7c3aed",
-            color: "#fff",
-            textAlign: "center",
-            padding: "8px 16px",
-            fontSize: "13px",
-            fontWeight: 500,
-            letterSpacing: "0.01em",
-          }}
-        >
+        <div className="bg-violet-600 text-white text-center px-4 py-2 text-[13px] font-medium tracking-[0.01em]">
           🚧 v2 branch — preview only, not live anoother hcange
         </div>
         {children}
