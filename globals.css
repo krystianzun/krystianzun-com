@@ -3,9 +3,28 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Raw palette */
+    --brown-800: #432818;
+    --brown-600: #73574a;
+    --brown-500: #9a7a70;
+    --brown-400: #c5ada8;
+    --brown-300: #d9c8c4;
+    --brown-200: #e8ddd9;
+    --brown-50: #faf6f2;
+
+    /* Semantic tokens */
+    --color-surface: var(--brown-50);
+    --color-heading: var(--brown-800);
+    --color-primary: var(--brown-600);
+    --color-muted: var(--brown-500);
+    --color-subtle: var(--brown-400);
+    --color-border: var(--brown-300);
+  }
+
   body {
-    background-color: #faf6f2;
-    color: #73574a;
+    background-color: var(--color-surface);
+    color: var(--color-primary);
     letter-spacing: -0.3px;
   }
 }
