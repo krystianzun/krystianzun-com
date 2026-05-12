@@ -39,13 +39,13 @@ function ProjectLink({ title, href, description, badge }: ProjectItem) {
   return (
     <div className="pb-8">
       <div className="mb-1 flex space-x-2">
-        <h4 className="group text-grey-800">
-          <span className="border-b-2 border-grey-300 hover:border-grey-800 font-medium">
+        <h4 className="group text-heading">
+          <span className="border-b-2 border-border hover:border-heading font-medium">
             <a href={href} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
           </span>
-          <span className="text-grey-400 group-hover:text-grey-800 font-medium">
+          <span className="text-subtle group-hover:text-heading font-medium">
             &#x2197;
           </span>
         </h4>
@@ -55,7 +55,7 @@ function ProjectLink({ title, href, description, badge }: ProjectItem) {
           </div>
         )}
       </div>
-      <p className="text-grey-500">{description}</p>
+      <p className="text-muted">{description}</p>
     </div>
   );
 }
@@ -63,16 +63,16 @@ function ProjectLink({ title, href, description, badge }: ProjectItem) {
 export default function Projects() {
   return (
     <section>
-      <h3 className="pb-4 text-grey-800 font-medium">Recently,</h3>
+      <h3 className="pb-4 text-heading font-medium">Recently,</h3>
       {projects.map((project) => (
         <ProjectLink key={project.title} {...project} />
       ))}
-      <div className="pb-8 text-grey-800">
+      <div className="pb-8 text-heading">
         <p className="pb-4">
           and
-          <span className="group text-grey-800">
+          <span className="group text-heading">
             <span>&nbsp;</span>
-            <span className="border-b-2 border-grey-300 hover:border-grey-800 font-medium">
+            <span className="border-b-2 border-border hover:border-heading font-medium">
               <a
                 href="https://krystianzun.substack.com/"
                 target="_blank"
@@ -81,7 +81,7 @@ export default function Projects() {
                 subscribe to my newsletter
               </a>
             </span>
-            <span className="text-grey-400 group-hover:text-grey-800 font-medium">
+            <span className="text-subtle group-hover:text-heading font-medium">
               &#x2197;
             </span>
           </span>{" "}
@@ -94,11 +94,11 @@ export default function Projects() {
           */}
         </div>
       </div>
-      <p className="text-grey-800">
+      <p className="text-heading">
         I love meeting new people, feel free to drop me a line at
-        <span className="group text-grey-800">
+        <span className="group text-heading">
           <span>&nbsp;</span>
-          <span className="border-b-2 border-gray-300 hover:border-gray-800 cursor-pointer inline-block font-medium">
+          <span className="border-b-2 border-border hover:border-heading cursor-pointer inline-block font-medium">
             <CopyText
               text="krystian.zun@gmail.com"
               displayText="krystian.zun@gmail.com"
@@ -107,7 +107,7 @@ export default function Projects() {
           </span>
         </span>
       </p>
-      <hr className="w-full h-px bg-gray-300 border-0 my-14" />
+      <hr className="w-full h-px bg-border border-0 my-14" />
     </section>
   );
 }
