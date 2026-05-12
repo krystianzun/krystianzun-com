@@ -2,17 +2,17 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="px-6 pt-12 pb-4 mx-auto max-w-400">
+    <main className="pt-12 pb-4 mx-auto max-w-lg">
       <section>
         <div className="pb-4">
-          <h2 className="font-medium text-grey-800">
+          <h2 className=" text-grey-800">
             hello there! *✲ﾟ*, i&apos;m Krystian
           </h2>
         </div>
       </section>
 
-      <section>
-        <p className="font-regular text-grey-800 pb-4">
+      <section className="mb-8">
+        <p className="text-grey-600 pb-4">
           A product designer and maker in love with building and shipping
           products that provide value.
         </p>

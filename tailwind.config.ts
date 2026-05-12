@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: 'class', // Enable dark mode
+  darkMode: "class", // Enable dark mode
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,23 +10,24 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter Tight', 'ui-sans-serif', 'system-ui'],
+        sans: ["var(--font-sans)", "Inter", "ui-sans-serif", "system-ui"],
       },
       colors: {
         grey: {
-          800: '#34343D',
-          600: '#696972',
-          500: '#8E8E93',
-          400: '#ABABB4',
-          300: '#CCCCD4',
-          200: '#E2E2E8',
+          800: "#432818",
+          600: "#73574a",
+          500: "#9a7a70",
+          400: "#c5ada8",
+          300: "#d9c8c4",
+          200: "#e8ddd9",
         },
         green: {
-          available: '#22C55E',
-        }
+          available: "#22C55E",
+        },
       },
       spacing: {
-        '400': '400px',
+        "400": "400px",
+        "550": "550px",
       },
     },
   },
@@ -34,4 +35,3 @@ const config: Config = {
 };
 
 export default config;
-
