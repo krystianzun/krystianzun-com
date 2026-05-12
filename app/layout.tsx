@@ -47,9 +47,6 @@ export default function RootLayout({
         ></script>
       </head>
       <body className="antialiased">
-        <div className="bg-violet-600 text-white text-center px-4 py-2 text-[13px] font-medium tracking-[0.01em]">
-          🚧 v2 branch — preview only, not live anoother hcange
-        </div>
         {children}
         <Analytics />
       </body>
