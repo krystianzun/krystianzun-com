@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="pt-20 pb-20 mx-auto max-w-lg px-4">
       <article className="mb-8">
-        <header className="pb-8 flex flex-row items-center gap-4">
+        <header className="pb-8 flex flex-row items-center gap-3">
           <div className="profile-flip-container">
             <div className="profile-flipper">
               <div className="profile-front">
