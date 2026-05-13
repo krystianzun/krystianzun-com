@@ -5,6 +5,9 @@
 @layer base {
   :root {
     /* Raw palette */
+    --white: #ffffff;
+    --black: #000000;
+
     --brown-800: #432818;
     --brown-600: #73574a;
     --brown-500: #9a7a70;
