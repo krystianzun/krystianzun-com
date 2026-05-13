@@ -37,7 +37,7 @@ function InlineEmail() {
 export default function Home() {
   return (
     <main className="pt-20 pb-20 mx-auto max-w-lg px-4">
-      <article className="mb-8">
+      <article className="mb-12">
         <header className="pb-8 flex flex-row items-center gap-3">
           <div className="profile-flip-container">
             <div className="profile-flipper">
@@ -120,7 +120,15 @@ export default function Home() {
         </div>
       </article>
 
-      <TiltCard className="rounded-xl p-6 mb-8 bg-[#FFE135] h-48 w-48" />
+      <div>
+        <h2 className="mb-4">
+          Check out some of my work and{" "}
+          <a href="/resume.pdf" target="_blank" className="link-muted">
+            resume
+          </a>
+        </h2>
+        <TiltCard className="rounded-xl p-6 mb-8 bg-[#FFE135] h-48 w-48" />
+      </div>
 
       <Footer />
     </main>
