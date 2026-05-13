@@ -15,6 +15,7 @@ const config: Config = {
       colors: {
         heading: "var(--color-heading)",
         primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
         muted: "var(--color-muted)",
         subtle: "var(--color-subtle)",
         border: "var(--color-border)",

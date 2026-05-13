@@ -33,7 +33,8 @@
     --color-surface: var(--white);
     --color-heading: var(--gray-900);
     --color-primary: var(--gray-800);
-    --color-muted: var(--gray-400);
+    --color-secondary: var(--gray-600);
+    --color-muted: var(--gray-500);
     --color-subtle: var(--gray-400);
     --color-border: var(--gray-200);
   }
