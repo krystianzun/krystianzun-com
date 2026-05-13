@@ -56,7 +56,7 @@ export default function Home() {
           <p>
             Over the last several years, I’ve worked on end-to-end products
             across blockchain, immersive learning, art and XR, taking ideas from
-            early concepts to launched experiences.
+            early concepts to impactful experiences.
           </p>
           <p>
             I currently work at FitXR, where I’m focused on bringing AI into the
