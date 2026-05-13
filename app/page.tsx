@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="pt-20 pb-20 mx-auto max-w-lg">
+    <main className="pt-20 pb-20 mx-auto max-w-lg px-4">
       <article className="mb-8">
         <header className="pb-8 flex flex-row items-center gap-4">
           <Image
@@ -34,27 +34,23 @@ export default function Home() {
           </div>
         </header>
         <div className="gap-4 text-primary grid">
-          <p>I was born in London, UK, and now live in Los Angeles, CA.</p>
           <p>
-            I founded Los Feliz Engineering, a consumer software company named
-            after the first neighbourhood I moved to in the U.S. We created
-            Honk, a real-time messaging app, and Family, a self-custody crypto
-            wallet. In September 2023, LFE was acquired by Aave Labs, where I
-            served as CPO until October 2025.
+            A maker at heart, in love with building and shipping products that
+            create real value.
           </p>
           <p>
-            I currently work at SpaceX/xAI, where I lead design for X.
-            Previously, I was Head of Design at Base, a division of Coinbase.
+            Over the last several years, I’ve worked on end-to-end products
+            across blockchain, immersive learning, art and XR, taking ideas from
+            early concepts to launched experiences.
           </p>
           <p>
-            I’m also a co-founder at Dip, which creates and publishes tools for
-            achieving interface excellence, such as cmdk and Agentation.
+            I currently work at FitXR, where I’m focused on bringing AI into the
+            day-to-day design workflows.
           </p>
           <p>
-            I consider myself a designer at heart and enjoy building highly
-            polished products.
+            You can find me on LinkedIn, X or reach me via
+            krystian.zun@gmail.com.
           </p>
-          <p>You can find me on X, Instagram, or reach me via email.</p>
         </div>
       </article>
 
