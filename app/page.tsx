@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Projects from "./_components/Projects";
 import Image from "next/image";
 import { useState } from "react";
+import TiltCard from "@/components/TiltCard";
 
 function InlineEmail() {
   const [hovering, setHovering] = useState(false);
@@ -118,6 +119,8 @@ export default function Home() {
           </p>
         </div>
       </article>
+
+      <TiltCard className="rounded-xl p-6 mb-8 bg-[#FFE135] h-48 w-48" />
 
       <Footer />
     </main>
