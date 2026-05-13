@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="pt-20 pb-4 mx-auto max-w-lg">
+    <main className="pt-20 pb-20 mx-auto max-w-lg">
       <article className="mb-8">
         <header className="pb-8">
           <Image
@@ -41,8 +41,6 @@ export default function Home() {
           <p>You can find me on X, Instagram, or reach me via email.</p>
         </div>
       </article>
-
-      <Projects />
 
       <Footer />
     </main>
