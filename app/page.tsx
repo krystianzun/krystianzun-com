@@ -1,6 +1,37 @@
+"use client";
+
 import Footer from "@/components/Footer";
 import Projects from "./_components/Projects";
 import Image from "next/image";
+import { useState } from "react";
+
+function InlineEmail() {
+  const [hovering, setHovering] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handleClick = () => {
+    navigator.clipboard.writeText("krystian.zun@gmail.com").then(() => {
+      setCopied(true);
+      setHovering(false);
+      setTimeout(() => setCopied(false), 1500);
+    });
+  };
+
+  return (
+    <span
+      className="link-muted cursor-pointer"
+      onMouseEnter={() => !copied && setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
+      onClick={handleClick}
+    >
+      {copied
+        ? "Copied!"
+        : hovering
+          ? "Click to copy"
+          : "krystian.zun@gmail.com"}
+    </span>
+  );
+}
 
 export default function Home() {
   return (
@@ -59,12 +90,31 @@ export default function Home() {
             early concepts to impactful experiences.
           </p>
           <p>
-            I currently work at FitXR, where I’m focused on bringing AI into the
-            day-to-day design workflows.
+            I currently work at{" "}
+            <a href="https://fitxr.com" target="_blank" className="link-muted">
+              FitXR
+            </a>
+            , where I’m focused on bringing AI into the day-to-day design
+            workflows.
           </p>
           <p>
-            You can find me on LinkedIn, X or reach me via
-            krystian.zun@gmail.com.
+            You can find me on{" "}
+            <a
+              href="https://www.linkedin.com/in/krystianzun/"
+              target="_blank"
+              className="link-muted"
+            >
+              LinkedIn
+            </a>
+            ,{" "}
+            <a
+              href="https://x.com/krystianzun"
+              target="_blank"
+              className="link-muted"
+            >
+              X
+            </a>{" "}
+            or reach me via <InlineEmail />.
           </p>
         </div>
       </article>

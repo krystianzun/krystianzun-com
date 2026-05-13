@@ -12,23 +12,6 @@ const links = [
 function Footer() {
   return (
     <footer>
-      <h3 className="pb-4 text-heading">Links</h3>
-      <div className="space-y-1">
-        {links.map((item) => (
-          <div key={item.name}>
-            <Link href={item.link} target="_blank">
-              <span className="text-muted hover:text-heading">{item.name}</span>
-            </Link>
-          </div>
-        ))}
-      </div>
-      <div className="text-muted hover:text-heading cursor-pointer inline-block mt-1">
-        <CopyText
-          text="krystian.zun@gmail.com"
-          displayText="krystian.zun@gmail.com"
-          hoverMessage="Click to copy"
-        />
-      </div>
       <div className="text-muted mt-14">
         ©{new Date().getFullYear()} Krystian Zun, London{" "}
       </div>
