@@ -7,13 +7,28 @@ export default function Home() {
     <main className="pt-20 pb-20 mx-auto max-w-lg px-4">
       <article className="mb-8">
         <header className="pb-8 flex flex-row items-center gap-4">
-          <Image
-            src="/images/kz-profile.jpeg"
-            alt="Krystian Zun"
-            width={48}
-            height={48}
-            className="rounded-full"
-          />
+          <div className="profile-flip-container">
+            <div className="profile-flipper">
+              <div className="profile-front">
+                <Image
+                  src="/images/kz-profile.jpeg"
+                  alt="Krystian Zun"
+                  width={48}
+                  height={48}
+                  className="rounded-full"
+                />
+              </div>
+              <div className="profile-back">
+                <Image
+                  src="/images/duckie.png"
+                  alt="Duckie"
+                  width={48}
+                  height={48}
+                  className="rounded-full"
+                />
+              </div>
+            </div>
+          </div>
           <div className="grid gap-0.5">
             <h1 className="text-primary">Krystian Zun</h1>
             <div className="text-muted">

@@ -48,4 +48,39 @@
 
     @apply text-sm;
   }
+
+  .profile-flip-container {
+    perspective: 1000px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .profile-flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+  }
+
+  .profile-flip-container:hover .profile-flipper {
+    transform: rotateY(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .profile-front,
+  .profile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .profile-back {
+    transform: rotateY(180deg);
+  }
 }
