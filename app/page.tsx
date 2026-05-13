@@ -3,20 +3,22 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="pt-12 pb-4 mx-auto max-w-lg">
-      <section>
-        <div className="pb-4">
-          <h2 className=" text-heading">
-            hello there! *✲ﾟ*, i&apos;m Krystian
-          </h2>
+      <article>
+        <header className="pb-4">
+          <h1 className="text-heading">Krystian Zun</h1>
+          <time className="text-muted">Updated 13th May, 2026</time>
+        </header>
+        <div className="gap-4 text-primary grid">
+          <p>
+            A product designer and maker in love with building and shipping
+            products that provide value.
+          </p>
+          <p>
+            A product designer and maker in love with building and shipping
+            products that provide value.
+          </p>
         </div>
-      </section>
-
-      <section className="mb-8">
-        <p className="text-primary pb-4">
-          A product designer and maker in love with building and shipping
-          products that provide value.
-        </p>
-      </section>
+      </article>
 
       <Footer />
     </main>

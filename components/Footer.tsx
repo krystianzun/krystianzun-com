@@ -3,10 +3,8 @@ import Link from "next/link";
 import CopyText from "./CopyText";
 
 const links = [
-  { name: "Resume", link: "https://read.cv/krystianzun" },
   { name: "LinkedIn", link: "https://www.linkedin.com/in/krystianzun/" },
   { name: "Twitter", link: "https://x.com/krystianzun" },
-  { name: "Instagram", link: "https://www.instagram.com/krystianzun/" },
   { name: "GitHub", link: "https://github.com/krystianzun" },
   { name: "Newsletter", link: "https://krystianzun.substack.com/" },
 ];
