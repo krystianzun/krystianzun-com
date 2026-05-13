@@ -114,7 +114,7 @@ export default function Home() {
             >
               X
             </a>{" "}
-            or reach me via <InlineEmail />.
+            or <InlineEmail />.
           </p>
         </div>
       </article>
