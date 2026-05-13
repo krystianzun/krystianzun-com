@@ -16,6 +16,19 @@
     --brown-200: #e8ddd9;
     --brown-50: #faf6f2;
 
+    --gray-50: #fafafa;
+    --gray-100: #f5f5f5;
+    --gray-150: #ededed;
+    --gray-200: #e5e5e5;
+    --gray-300: #d4d4d4;
+    --gray-400: #a3a3a3;
+    --gray-500: #737373;
+    --gray-600: #525252;
+    --gray-700: #404040;
+    --gray-800: #262626;
+    --gray-900: #171717;
+    --gray-950: #0a0a0a;
+
     /* Semantic tokens */
     --color-surface: var(--brown-50);
     --color-heading: var(--brown-800);
@@ -28,6 +41,8 @@
   body {
     background-color: var(--color-surface);
     color: var(--color-primary);
-    letter-spacing: -0.3px;
+    letter-spacing: -0.1px;
+
+    @apply text-sm;
   }
 }
