@@ -1,10 +1,19 @@
 import Footer from "@/components/Footer";
+import Projects from "./_components/Projects";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="pt-20 pb-4 mx-auto max-w-lg">
       <article className="mb-8">
-        <header className="pb-4">
+        <header className="pb-8">
+          <Image
+            src="/images/kz-profile.jpeg"
+            alt="Krystian Zun"
+            width={48}
+            height={48}
+            className="rounded-full mb-2"
+          />
           <h1 className="text-heading">Krystian Zun</h1>
           <time className="text-muted">Updated 13th May, 2026</time>
         </header>
@@ -32,6 +41,8 @@ export default function Home() {
           <p>You can find me on X, Instagram, or reach me via email.</p>
         </div>
       </article>
+
+      <Projects />
 
       <Footer />
     </main>
