@@ -123,7 +123,11 @@ export default function Home() {
       <div>
         <h2 className="mb-4">
           Check out some of my work and{" "}
-          <a href="/resume.pdf" target="_blank" className="link-muted">
+          <a
+            href="/Krystian Zun - Resume.pdf"
+            target="_blank"
+            className="link-muted"
+          >
             resume
           </a>
         </h2>
