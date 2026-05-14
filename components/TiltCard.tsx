@@ -24,13 +24,20 @@ export default function TiltCard({
     const rotateX = ((y - centerY) / centerY) * -6;
     const rotateY = ((x - centerX) / centerX) * 6;
 
+    const px = (x / rect.width) * 100;
+    const py = (y / rect.height) * 100;
+
     card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+    card.style.setProperty("--mouse-x", `${px}%`);
+    card.style.setProperty("--mouse-y", `${py}%`);
   };
 
   const handleMouseLeave = () => {
     const card = cardRef.current;
     if (!card) return;
     card.style.transform = `perspective(800px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+    card.style.setProperty("--mouse-x", `50%`);
+    card.style.setProperty("--mouse-y", `0%`);
   };
 
   return (

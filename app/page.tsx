@@ -132,13 +132,21 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <TiltCard className="rounded-xl mb-8 h-40 aspect-video p-1 bg-[#FDF351]">
+          <TiltCard className="rounded-xl mb-8 h-40 aspect-video bg-[#FDF351]">
             <div className="relative w-full h-full rounded-lg overflow-hidden">
               <Image
                 src="/images/portfolio-cover.png"
                 alt="Portfolio"
                 fill
                 className="object-cover"
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  background:
+                    "radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 0%), rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.05) 40%, transparent 70%)",
+                  transition: "background 0.1s ease",
+                }}
               />
             </div>
           </TiltCard>
