@@ -94,7 +94,7 @@ export default function Home() {
             <p>
               I currently work at{" "}
               <a
-                href="https://fitxr.com"
+                href="https://www.meta.com/en-gb/experiences/fitxr/2327205800645550/"
                 target="_blank"
                 className="link-muted"
               >
