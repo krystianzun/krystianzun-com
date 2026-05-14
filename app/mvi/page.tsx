@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const MviPage = () => {
   return (
-    <main className="mb-48 mt-24 text-grey-800">
+    <main className="mb-48 mt-24 text-heading">
       <section className="m-auto flex max-w-md flex-col gap-12 text-primary text-lg lowercase">
         <div className="flex flex-col gap-6 ">
           <h1 className="text-2xl font-medium text-black">
@@ -28,7 +28,7 @@ const MviPage = () => {
           <button className="bg-black cursor-pointer text-white p-4 w-full max-w-sm">
             validate&nbsp;&nbsp;&nbsp;( $1499 )
           </button>
-          <p className="text-grey-600 text-sm">5 – 7 days</p>
+          <p className="text-primary text-sm">5 – 7 days</p>
         </div>
         <div className="flex flex-col gap-6">
           <h3 className="text-xl font-medium text-black">How?</h3>
@@ -64,7 +64,7 @@ const MviPage = () => {
               <Verified className="mr-2 mt-0.5 text-green-500" size={24} />
               <span className="flex flex-col">
                 Deliver actionable insights and a clear next step <br />
-                <span className="text-grey-500 text">
+                <span className="text-muted text">
                   (whether that’s refining your concept or building your MVP
                   with confidence)
                 </span>
@@ -156,7 +156,7 @@ const MviPage = () => {
           <button className="bg-black cursor-pointer text-white p-4 w-full max-w-sm">
             validate&nbsp;&nbsp;&nbsp;( $1499 )
           </button>
-          <p className="text-grey-600 text-sm">5 – 7 days</p>
+          <p className="text-primary text-sm">5 – 7 days</p>
         </div>
       </section>
     </main>

@@ -13,7 +13,7 @@ const CopyEmail = () => {
       .then(() => {
         setCopyStatus("Copied!");
         setIsHovering(false); // Hide the "Click to copy" message
-        setTimeout(() => setCopyStatus(""), 1000); // Reset after 1 seconds
+        setTimeout(() => setCopyStatus(""), 500); // Reset after 1 seconds
       })
       .catch(() => {
         setCopyStatus("Failed to copy");

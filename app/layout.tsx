@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter_Tight } from "next/font/google";
+import { Inter, Instrument_Serif } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "/globals.css";
 
-const inter = Inter_Tight({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-display",
+});
 
 export const metadata: Metadata = {
   title: "Krystian Zun",
@@ -46,7 +51,9 @@ export default function RootLayout({
           data-website-id="6a880c35-a420-485e-b9c9-f271cf077680"
         ></script>
       </head>
-      <body className="antialiased">
+      <body
+        className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased`}
+      >
         {children}
         <Analytics />
       </body>
