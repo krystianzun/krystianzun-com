@@ -11,7 +11,7 @@ const links = [
 
 function Footer() {
   return (
-    <footer>
+    <footer className="pb-8">
       <div className="text-muted mt-14">
         ©{new Date().getFullYear()} Krystian Zun, London{" "}
       </div>
