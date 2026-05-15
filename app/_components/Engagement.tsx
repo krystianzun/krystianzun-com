@@ -7,30 +7,25 @@ interface EngagementItem {
 
 const engagements: EngagementItem[] = [
   {
-    title: "Designing for Spatial Computing",
-    href: "#",
+    title: "Designing at Scale: Creating Leverage with AI",
+    href: "https://maven.com/p/c0cd6c/designing-at-scale-creating-leverage-with-ai",
     date: "2025",
     isNew: true,
   },
   {
-    title: "AI in the Design Workflow — FitXR Podcast",
-    href: "#",
-    date: "2025",
-    isNew: true,
+    title: "From Zero to Product, Building with AI as a Designer",
+    href: "https://www.youtube.com/watch?v=zwlQzb7QyRA",
+    date: "2024",
+    isNew: false,
   },
   {
-    title: "From Concept to XR Product — Immersive Design Panel",
-    href: "#",
+    title: "Side Quest: Fuck Around and Find Out",
+    href: "https://www.linkedin.com/posts/krystianzun_last-week-luke-murphy-pulled-off-one-of-ugcPost-7348690990477504513-ec4K",
     date: "2024",
   },
   {
-    title: "Building Design Communities — Design Futures Talk",
-    href: "#",
-    date: "2024",
-  },
-  {
-    title: "XR Onboarding Patterns — AWE Europe",
-    href: "#",
+    title: "Principles of designing for XR – Guest Lecture & Workshop",
+    href: "https://www.linkedin.com/posts/krystianzun_xr-design-uiux-ugcPost-7191809695270031360-zVJN",
     date: "2024",
   },
 ];
@@ -45,16 +40,14 @@ function EngagementRow({ title, href, date, isNew }: EngagementItem) {
         className="flex items-center justify-between py-2.5 transition-opacity duration-250 group-hover/list:opacity-30 hover:!opacity-100"
       >
         <div className="flex items-center gap-2">
-          <span className="text-heading font-medium">{title}</span>
+          <span className="text-primary">{title}</span>
           {isNew && (
             <span className="text-xs font-medium px-1.5 py-0.5 bg-gray-100 text-muted rounded-sm">
               New
             </span>
           )}
         </div>
-        <span className="text-muted text-xs shrink-0 ml-4 tabular-nums">
-          {date}
-        </span>
+        <span className="text-muted ml-2 tabular-nums">{date}</span>
       </a>
     </div>
   );
@@ -63,7 +56,7 @@ function EngagementRow({ title, href, date, isNew }: EngagementItem) {
 export default function Engagement() {
   return (
     <section className="mb-12">
-      <h3 className="pb-4 text-heading font-medium">Engagements</h3>
+      <h3 className="pb-2 text-muted font-medium">Engagements</h3>
       <div className="group/list">
         {engagements.map((item) => (
           <EngagementRow key={item.title} {...item} />
