@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Projects from "./_components/Projects";
+import Engagement from "./_components/Engagement";
 import Image from "next/image";
 import { useState } from "react";
 import TiltCard from "@/components/TiltCard";
@@ -141,7 +142,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TiltCard className="rounded-xl mb-8 h-40 aspect-video bg-[#FDF351]">
+            <TiltCard className="rounded-xl mb-16 h-40 aspect-video bg-[#FDF351]">
               <div className="relative w-full h-full rounded-lg overflow-hidden">
                 <Image
                   src="/images/portfolio-cover.png"
@@ -161,6 +162,7 @@ export default function Home() {
             </TiltCard>
           </a>
         </div>
+        <Engagement />
       </div>
 
       <Footer />
