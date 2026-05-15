@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="grid gap-0.5">
+            <div className="grid gap-0.5 font-medium">
               <h1 className="text-primary">Krystian Zun</h1>
               <div className="text-muted">
                 0
@@ -127,7 +127,7 @@ export default function Home() {
         </article>
 
         <div>
-          <h2 className="mb-4">
+          <h2 className="mb-4 font-medium">
             Check out some of my work and{" "}
             <a
               href="/Krystian Zun - Resume.pdf"
