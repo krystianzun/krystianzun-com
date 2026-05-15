@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Projects from "./_components/Projects";
+import Engagement from "./_components/Engagement";
 import Image from "next/image";
 import { useState } from "react";
 import TiltCard from "@/components/TiltCard";
@@ -62,7 +63,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="grid gap-0.5">
+            <div className="grid gap-0.5 font-medium">
               <h1 className="text-primary">Krystian Zun</h1>
               <div className="text-muted">
                 0
@@ -126,7 +127,7 @@ export default function Home() {
         </article>
 
         <div>
-          <h2 className="mb-4">
+          <h2 className="mb-4 font-medium">
             Check out some of my work and{" "}
             <a
               href="/Krystian Zun - Resume.pdf"
@@ -141,7 +142,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TiltCard className="rounded-xl mb-8 h-40 aspect-video bg-[#FDF351]">
+            <TiltCard className="rounded-xl mb-16 h-40 aspect-video bg-[#FDF351]">
               <div className="relative w-full h-full rounded-lg overflow-hidden">
                 <Image
                   src="/images/portfolio-cover.png"
@@ -161,6 +162,7 @@ export default function Home() {
             </TiltCard>
           </a>
         </div>
+        <Engagement />
       </div>
 
       <Footer />
