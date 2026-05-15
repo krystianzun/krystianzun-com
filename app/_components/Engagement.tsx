@@ -2,6 +2,7 @@ interface EngagementItem {
   title: string;
   href: string;
   date: string;
+  description?: string;
   isNew?: boolean;
 }
 
@@ -10,44 +11,59 @@ const engagements: EngagementItem[] = [
     title: "Designing at Scale: Creating Leverage with AI",
     href: "https://maven.com/p/c0cd6c/designing-at-scale-creating-leverage-with-ai",
     date: "2025",
+    description: "AI-Powered Design Workflows — Season 2",
     isNew: true,
   },
   {
     title: "From Zero to Product, Building with AI as a Designer",
     href: "https://www.youtube.com/watch?v=zwlQzb7QyRA",
     date: "2024",
+    description: "Design With AI",
     isNew: false,
-  },
-  {
-    title: "Side Quest: Fuck Around and Find Out",
-    href: "https://www.linkedin.com/posts/krystianzun_last-week-luke-murphy-pulled-off-one-of-ugcPost-7348690990477504513-ec4K",
-    date: "2024",
   },
   {
     title: "Principles of designing for XR – Guest Lecture & Workshop",
     href: "https://www.linkedin.com/posts/krystianzun_xr-design-uiux-ugcPost-7191809695270031360-zVJN",
     date: "2024",
+    description: "NYU Steinhardt, Pratt Institute",
+  },
+  {
+    title: "Fuck Around and Find Out",
+    href: "https://www.linkedin.com/posts/krystianzun_last-week-luke-murphy-pulled-off-one-of-ugcPost-7348690990477504513-ec4K",
+    date: "2024",
+    description: "Side Quest Meetup",
   },
 ];
 
-function EngagementRow({ title, href, date, isNew }: EngagementItem) {
+function EngagementRow({
+  title,
+  href,
+  date,
+  description,
+  isNew,
+}: EngagementItem) {
   return (
     <div className="border-b border-border">
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-between py-2.5 transition-opacity duration-250 group-hover/list:opacity-30 hover:!opacity-100"
+        className="flex items-start justify-between py-2.5 transition-opacity duration-250 group-hover/list:opacity-30 hover:!opacity-100"
       >
-        <div className="flex items-center gap-2">
-          <span className="text-primary">{title}</span>
-          {isNew && (
-            <span className="text-xs font-medium px-1.5 py-0.5 bg-gray-100 text-muted rounded-sm">
-              New
-            </span>
+        <div className="flex flex-col gap-0.5">
+          <div className="flex items-center gap-2">
+            <span className="text-primary">{title}</span>
+            {isNew && (
+              <span className="text-xs font-medium px-1.5 py-0.5 bg-gray-100 text-muted rounded-sm">
+                New
+              </span>
+            )}
+          </div>
+          {description && (
+            <span className="text-muted text-sm">{description}</span>
           )}
         </div>
-        <span className="text-muted ml-2 tabular-nums">{date}</span>
+        <span className="text-muted ml-4 tabular-nums shrink-0">{date}</span>
       </a>
     </div>
   );
