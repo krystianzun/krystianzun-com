@@ -3,6 +3,7 @@
 import Footer from "@/components/Footer";
 import Projects from "./_components/Projects";
 import Engagement from "./_components/Engagement";
+import Writing from "./_components/Writing";
 import Image from "next/image";
 import { useState } from "react";
 import TiltCard from "@/components/TiltCard";
@@ -162,7 +163,9 @@ export default function Home() {
             </TiltCard>
           </a>
         </div>
+
         <Engagement />
+        <Writing />
       </div>
 
       <Footer />
