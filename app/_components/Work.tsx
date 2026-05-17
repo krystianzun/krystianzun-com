@@ -2,15 +2,17 @@
 
 import Image from "next/image";
 
+interface WorkParty {
+  name: string;
+  logo?: string;
+  color?: string;
+}
+
 interface WorkItem {
   title: string;
   href?: string;
-  company: string;
-  companyLogo?: string;
-  companyColor?: string;
-  collaborator?: string;
-  collaboratorLogo?: string;
-  collaboratorColor?: string;
+  company: WorkParty;
+  collaborator?: WorkParty;
   result: string;
   period: string;
   cover?: string;
@@ -20,16 +22,37 @@ interface WorkItem {
 const work: WorkItem[] = [
   {
     title: "Onboarding Revamp",
-    company: "FitXR",
-    companyLogo: "/images/illit-magnetic.jpg",
-    companyColor: "#7C3AED",
-    collaboratorLogo: "/images/lisaRockstar.jpg",
-    collaboratorColor: "#1E40AF",
+    company: {
+      name: "FitXR",
+      logo: "/images/illit-magnetic.jpg",
+      color: "#7C3AED",
+    },
+    collaborator: {
+      name: "In-house",
+      logo: "/images/lisaRockstar.jpg",
+      color: "#1E40AF",
+    },
     result:
       "Increased Paid Membership Conversion by +31% and Free Trial Conversion by +25%.",
     period: "Dec, 2025",
-    cover: "/images/portfolio-cover.png",
-    coverHover: undefined,
+    cover: "/images/positive-friction-cover.png",
+  },
+  {
+    title: "Onboarding Revamp",
+    company: {
+      name: "FitXR",
+      logo: "/images/illit-magnetic.jpg",
+      color: "#7C3AED",
+    },
+    collaborator: {
+      name: "In-house",
+      logo: "/images/lisaRockstar.jpg",
+      color: "#1E40AF",
+    },
+    result:
+      "Increased Paid Membership Conversion by +31% and Free Trial Conversion by +25%.",
+    period: "Dec, 2025",
+    cover: "/images/positive-friction-cover.png",
   },
 ];
 
@@ -103,11 +126,7 @@ function WorkRow({
   title,
   href,
   company,
-  companyLogo,
-  companyColor,
   collaborator,
-  collaboratorLogo,
-  collaboratorColor,
   result,
   period,
   cover,
@@ -119,13 +138,17 @@ function WorkRow({
       <div className="flex items-center justify-between gap-4 mb-1.5">
         <div className="flex items-center gap-2">
           <div className="flex items-center">
-            <LogoCircle src={companyLogo} color={companyColor} name={company} />
-            {(collaborator || collaboratorLogo) && (
+            <LogoCircle
+              src={company.logo}
+              color={company.color}
+              name={company.name}
+            />
+            {collaborator && (
               <div className="-ml-2">
                 <LogoCircle
-                  src={collaboratorLogo}
-                  color={collaboratorColor}
-                  name={collaborator ?? ""}
+                  src={collaborator.logo}
+                  color={collaborator.color}
+                  name={collaborator.name}
                 />
               </div>
             )}
