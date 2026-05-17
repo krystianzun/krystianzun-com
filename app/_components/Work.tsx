@@ -21,9 +21,9 @@ const work: WorkItem[] = [
   {
     title: "Onboarding Revamp",
     company: "FitXR",
-    companyLogo: "/images/portfolio-cover.png",
+    companyLogo: "/images/illit-magnetic.jpg",
     companyColor: "#7C3AED",
-    collaborator: "In-house",
+    collaboratorLogo: "/images/lisaRockstar.jpg",
     collaboratorColor: "#1E40AF",
     result:
       "Increased Paid Membership Conversion by +31% and Free Trial Conversion by +25%.",
@@ -44,12 +44,12 @@ function LogoCircle({
 }) {
   if (src) {
     return (
-      <div className="w-6 h-6 rounded-full border-2 border-white overflow-hidden shrink-0 bg-gray-100">
+      <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden shrink-0 bg-gray-100">
         <Image
           src={src}
           alt={name}
-          width={24}
-          height={24}
+          width={40}
+          height={40}
           className="object-cover w-full h-full"
         />
       </div>
@@ -57,7 +57,7 @@ function LogoCircle({
   }
   return (
     <div
-      className="w-6 h-6 rounded-full border-2 border-white shrink-0 flex items-center justify-center text-white text-[9px] font-bold"
+      className="w-10 h-10 rounded-full border-2 border-white shrink-0 flex items-center justify-center text-white text-[9px] font-bold"
       style={{ backgroundColor: color ?? "#6B7280" }}
     >
       {name.charAt(0).toUpperCase()}
@@ -120,12 +120,12 @@ function WorkRow({
         <div className="flex items-center gap-2">
           <div className="flex items-center">
             <LogoCircle src={companyLogo} color={companyColor} name={company} />
-            {collaborator && (
+            {(collaborator || collaboratorLogo) && (
               <div className="-ml-2">
                 <LogoCircle
                   src={collaboratorLogo}
                   color={collaboratorColor}
-                  name={collaborator}
+                  name={collaborator ?? ""}
                 />
               </div>
             )}
@@ -156,7 +156,7 @@ function WorkRow({
 export default function Work() {
   return (
     <section className="mb-12">
-      <h3 className="pb-2 text-muted font-medium">Work</h3>
+      <h3 className="pb-2 text-muted font-medium">Impact</h3>
       <div className="group/list">
         {work.map((item) => (
           <WorkRow key={item.title + item.company} {...item} />
