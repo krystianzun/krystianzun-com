@@ -13,7 +13,7 @@ interface WorkItem {
   href?: string;
   company: WorkParty;
   collaborator?: WorkParty;
-  result: string;
+  result: string[];
   period: string;
   cover?: string;
   coverHover?: string;
@@ -32,25 +32,11 @@ const work: WorkItem[] = [
       logo: "/images/lisaRockstar.jpg",
       color: "#1E40AF",
     },
-    result:
-      "Increased Paid Membership Conversion by +31% and Free Trial Conversion by +25%.",
-    period: "Dec, 2025",
-    cover: "/images/positive-friction-cover.png",
-  },
-  {
-    title: "Onboarding Revamp",
-    company: {
-      name: "FitXR",
-      logo: "/images/illit-magnetic.jpg",
-      color: "#7C3AED",
-    },
-    collaborator: {
-      name: "In-house",
-      logo: "/images/lisaRockstar.jpg",
-      color: "#1E40AF",
-    },
-    result:
-      "Increased Paid Membership Conversion by +31% and Free Trial Conversion by +25%.",
+    result: [
+      "Led a revamp of the onboarding, introducing hyper-personalised flows.",
+      "Increased Paid Membership Conversion by +31% ",
+      "Free Trial Conversion by +25%.",
+    ],
     period: "Dec, 2025",
     cover: "/images/positive-friction-cover.png",
   },
@@ -159,7 +145,13 @@ function WorkRow({
           {period}
         </span>
       </div>
-      <p className="text-muted text-sm leading-relaxed">{result}</p>
+      <div className="flex flex-col gap-0.5">
+        {result.map((p, i) => (
+          <p key={i} className="text-muted text-sm leading-relaxed">
+            {p}
+          </p>
+        ))}
+      </div>
     </div>
   );
 
