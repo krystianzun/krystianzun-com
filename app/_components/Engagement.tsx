@@ -47,19 +47,19 @@ function EngagementRow({
   description,
   isNew,
   dimmed,
-  onMouseEnter,
-  onMouseLeave,
+  onEnter,
+  onLeave,
 }: EngagementItem & {
   dimmed: boolean;
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
+  onEnter: () => void;
+  onLeave: () => void;
 }) {
   return (
     <div
       className="border-b border-border transition-opacity duration-200"
       style={{ opacity: dimmed ? 0.3 : 1 }}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+      onPointerEnter={(e) => e.pointerType === "mouse" && onEnter()}
+      onPointerLeave={(e) => e.pointerType === "mouse" && onLeave()}
     >
       <a
         href={href}
@@ -98,8 +98,8 @@ export default function Engagement() {
             key={item.title}
             {...item}
             dimmed={hoveredIndex !== null && hoveredIndex !== i}
-            onMouseEnter={() => setHoveredIndex(i)}
-            onMouseLeave={() => setHoveredIndex(null)}
+            onEnter={() => setHoveredIndex(i)}
+            onLeave={() => setHoveredIndex(null)}
           />
         ))}
       </div>

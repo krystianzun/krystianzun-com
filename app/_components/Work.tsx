@@ -176,12 +176,12 @@ function WorkRow({
   cover,
   coverHover,
   dimmed,
-  onMouseEnter,
-  onMouseLeave,
+  onEnter,
+  onLeave,
 }: WorkItem & {
   dimmed: boolean;
-  onMouseEnter: () => void;
-  onMouseLeave: () => void;
+  onEnter: () => void;
+  onLeave: () => void;
 }) {
   const inner = (
     <div className="py-4">
@@ -232,8 +232,8 @@ function WorkRow({
     <div
       className="border-b border-border transition-opacity duration-200"
       style={{ opacity: dimmed ? 0.3 : 1 }}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+      onPointerEnter={(e) => e.pointerType === "mouse" && onEnter()}
+      onPointerLeave={(e) => e.pointerType === "mouse" && onLeave()}
     >
       {href ? (
         <a href={href} target="_blank" rel="noopener noreferrer">
@@ -258,8 +258,8 @@ export default function Work() {
             key={item.title}
             {...item}
             dimmed={hoveredIndex !== null && hoveredIndex !== i}
-            onMouseEnter={() => setHoveredIndex(i)}
-            onMouseLeave={() => setHoveredIndex(null)}
+            onEnter={() => setHoveredIndex(i)}
+            onLeave={() => setHoveredIndex(null)}
           />
         ))}
       </div>
