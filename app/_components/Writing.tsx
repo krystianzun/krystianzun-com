@@ -32,7 +32,7 @@ function WritingRow({ title, href, date, description, isNew }: WritingItem) {
         className="flex items-start justify-between py-2.5 transition-opacity duration-250 group-hover/list:opacity-30 hover:!opacity-100"
       >
         <div className="flex flex-col gap-0.5">
-          <div className="flex items-center gap-2">
+          <div className="flex items-start gap-2">
             <span className="text-primary">{title}</span>
             {isNew && (
               <span className="text-xs font-medium px-1.5 py-0.5 bg-gray-100 text-muted rounded-sm">
@@ -52,7 +52,7 @@ function WritingRow({ title, href, date, description, isNew }: WritingItem) {
 
 export default function Writing() {
   return (
-    <section className="mb-12">
+    <section className="mb-16">
       <h3 className="pb-2 text-muted font-medium">Writings</h3>
       <div className="group/list">
         {writings.map((item) => (

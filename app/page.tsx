@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Projects from "./_components/Projects";
 import Engagement from "./_components/Engagement";
 import Writing from "./_components/Writing";
+import Work from "./_components/Work";
 import Image from "next/image";
 import { useState } from "react";
 import TiltCard from "@/components/TiltCard";
@@ -40,7 +41,7 @@ export default function Home() {
   return (
     <main className="pt-20 mx-auto max-w-lg px-4 min-h-screen flex flex-col">
       <div className="flex-1">
-        <article className="mb-12">
+        <article className="mb-16">
           <header className="pb-8 flex flex-row items-center gap-3">
             <div className="profile-flip-container">
               <div className="profile-flipper">
@@ -124,46 +125,28 @@ export default function Home() {
               </a>{" "}
               or <InlineEmail />.
             </p>
+            <p>
+              Check out some of my{" "}
+              <a
+                href="https://tinyurl.com/kzportfolio26"
+                target="_blank"
+                className="link-muted"
+              >
+                work
+              </a>{" "}
+              and{" "}
+              <a
+                href="/Krystian Zun - Resume.pdf"
+                target="_blank"
+                className="link-muted"
+              >
+                resume
+              </a>
+              .
+            </p>
           </div>
         </article>
-
-        <div>
-          <h2 className="mb-4 font-medium">
-            Check out some of my work and{" "}
-            <a
-              href="/Krystian Zun - Resume.pdf"
-              target="_blank"
-              className="link-muted"
-            >
-              resume
-            </a>
-          </h2>
-          <a
-            href="https://tinyurl.com/kzportfolio26"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TiltCard className="rounded-xl mb-16 h-40 aspect-video bg-[#FDF351]">
-              <div className="relative w-full h-full rounded-lg overflow-hidden">
-                <Image
-                  src="/images/portfolio-cover.png"
-                  alt="Portfolio"
-                  fill
-                  className="object-cover"
-                />
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    background:
-                      "radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 0%), rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.05) 40%, transparent 70%)",
-                    transition: "background 0.1s ease",
-                  }}
-                />
-              </div>
-            </TiltCard>
-          </a>
-        </div>
-
+        <Work />
         <Engagement />
         <Writing />
       </div>
