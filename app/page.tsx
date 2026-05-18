@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <main className="pt-20 mx-auto max-w-lg px-4 min-h-screen flex flex-col">
       <div className="flex-1">
-        <article className="mb-12">
+        <article className="mb-16">
           <header className="pb-8 flex flex-row items-center gap-3">
             <div className="profile-flip-container">
               <div className="profile-flipper">
@@ -125,7 +125,7 @@ export default function Home() {
               </a>{" "}
               or <InlineEmail />.
             </p>
-            <p className="mb-4 font-medium">
+            <p className="font-medium">
               Check out some of my{" "}
               <a
                 href="https://tinyurl.com/kzportfolio26"

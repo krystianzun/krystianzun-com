@@ -72,7 +72,7 @@ function EngagementRow({
 
 export default function Engagement() {
   return (
-    <section className="mb-12">
+    <section className="mb-16">
       <h3 className="pb-2 text-muted font-medium">Engagements</h3>
       <div className="group/list">
         {engagements.map((item) => (

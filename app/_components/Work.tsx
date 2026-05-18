@@ -192,7 +192,7 @@ function WorkRow({
 
 export default function Work() {
   return (
-    <section className="mb-12">
+    <section className="mb-16">
       <h3 className="pb-2 text-muted font-medium">Impact</h3>
       <div className="group/list">
         {work.map((item) => (

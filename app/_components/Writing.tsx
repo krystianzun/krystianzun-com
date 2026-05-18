@@ -52,7 +52,7 @@ function WritingRow({ title, href, date, description, isNew }: WritingItem) {
 
 export default function Writing() {
   return (
-    <section className="mb-12">
+    <section className="mb-16">
       <h3 className="pb-2 text-muted font-medium">Writings</h3>
       <div className="group/list">
         {writings.map((item) => (
