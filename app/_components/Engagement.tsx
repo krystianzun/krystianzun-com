@@ -52,7 +52,7 @@ function EngagementRow({
         className="flex items-start justify-between py-2.5 transition-opacity duration-250 group-hover/list:opacity-30 hover:!opacity-100"
       >
         <div className="flex flex-col gap-0.5">
-          <div className="flex items-center gap-2">
+          <div className="flex items-start gap-2">
             <span className="text-primary">{title}</span>
             {isNew && (
               <span className="text-xs font-medium px-1.5 py-0.5 bg-cyan-100 text-cyan-600 rounded-sm">
