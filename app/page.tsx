@@ -147,8 +147,8 @@ export default function Home() {
           </div>
         </article>
         <Work />
-        <Writing />
         <Engagement />
+        <Writing />
       </div>
 
       <Footer />
