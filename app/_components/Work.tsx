@@ -52,6 +52,24 @@ const work: WorkItem[] = [
     period: "2024",
     cover: "/images/avp-cover.png",
   },
+  {
+    title: "Remembering The Gates",
+    company: {
+      name: "Superbright",
+      logo: "/images/superbright-logo.jpg",
+      color: "#7C3AED",
+    },
+    collaborator: {
+      name: "Bloomberg Philanthropies",
+      logo: "/images/bloomberg-logo.png",
+      color: "#1E40AF",
+    },
+    result: [
+      'Led UX for "The Gates" AR experience in Central Park, NYC, commissioned by Bloomberg Philanthropies, attracting ~50,000+ visitors over its month-long run.',
+    ],
+    period: "2025",
+    cover: "/images/gates-cover.png",
+  },
 ];
 
 function LogoCircle({
