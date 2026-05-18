@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import TiltCard from "@/components/TiltCard";
 
 interface WorkParty {
   name: string;
@@ -21,7 +22,22 @@ interface WorkItem {
 
 const work: WorkItem[] = [
   {
-    title: "Onboarding Revamp",
+    title: "Hyper-Personalised Onboarding",
+    company: {
+      name: "FitXR",
+      logo: "/images/fitxr-logo.png",
+      color: "#7C3AED",
+    },
+    result: [
+      "Led a revamp of the onboarding, introducing hyper-personalised flows.",
+      "Increased Paid Membership Conversion by +31% ",
+      "Free Trial Conversion by +25%.",
+    ],
+    period: "12.2025",
+    cover: "/images/pf-cover.png",
+  },
+  {
+    title: "World-class exhibitions anywhere in the world",
     company: {
       name: "FitXR",
       logo: "/images/illit-magnetic.jpg",
@@ -33,11 +49,9 @@ const work: WorkItem[] = [
       color: "#1E40AF",
     },
     result: [
-      "Led a revamp of the onboarding, introducing hyper-personalised flows.",
-      "Increased Paid Membership Conversion by +31% ",
-      "Free Trial Conversion by +25%.",
+      "Designed a multi-platform art ecosystem (desktop, mobile, Meta Quest, Apple Vision Pro) driving $1M+ in art sales.",
     ],
-    period: "Dec, 2025",
+    period: "2024",
     cover: "/images/positive-friction-cover.png",
   },
 ];
@@ -53,12 +67,12 @@ function LogoCircle({
 }) {
   if (src) {
     return (
-      <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden shrink-0 bg-gray-100">
+      <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden shrink-0 bg-gray-100">
         <Image
           src={src}
           alt={name}
-          width={40}
-          height={40}
+          width={32}
+          height={32}
           className="object-cover w-full h-full"
         />
       </div>
@@ -66,7 +80,7 @@ function LogoCircle({
   }
   return (
     <div
-      className="w-10 h-10 rounded-full border-2 border-white shrink-0 flex items-center justify-center text-white text-[9px] font-bold"
+      className="w-8 h-8 rounded-full border-2 border-white shrink-0 flex items-center justify-center text-white text-[9px] font-bold"
       style={{ backgroundColor: color ?? "#6B7280" }}
     >
       {name.charAt(0).toUpperCase()}
@@ -90,7 +104,7 @@ function WorkCover({
   }
 
   return (
-    <div className="relative w-full h-70 aspect-video rounded-lg overflow-hidden mb-3 group/cover">
+    <TiltCard className="relative w-full h-70 aspect-video rounded-lg overflow-hidden mb-3 group/cover">
       <Image
         src={cover}
         alt={title}
@@ -104,7 +118,15 @@ function WorkCover({
           className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/cover:opacity-100 transition-opacity duration-200"
         />
       )}
-    </div>
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 0%), rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.05) 40%, transparent 70%)",
+          transition: "background 0.1s ease",
+        }}
+      />
+    </TiltCard>
   );
 }
 
@@ -156,7 +178,7 @@ function WorkRow({
   );
 
   return (
-    <div className="border-b border-border group-hover/list:opacity-30 hover:!opacity-100 transition-opacity duration-200">
+    <div className="border-b border-border">
       {href ? (
         <a href={href} target="_blank" rel="noopener noreferrer">
           {inner}
