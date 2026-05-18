@@ -103,11 +103,11 @@
       text-decoration-color: var(--color-secondary);
     }
   }
+}
 
-  @media (hover: none) {
-    .group\/list > * {
-      opacity: 1 !important;
-      transition: none !important;
-    }
+@media (hover: none) {
+  .group\/list > * {
+    opacity: 1 !important;
+    transition: none !important;
   }
 }
