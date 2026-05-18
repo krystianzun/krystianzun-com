@@ -31,6 +31,7 @@ const work: WorkItem[] = [
     result: [
       "Led a revamp of the onboarding, introducing hyper-personalised flows that increased Paid Membership Conversion by +31% and Free Trial Conversion by +25%.",
     ],
+    href: "https://www.meta.com/en-gb/experiences/fitxr/2327205800645550/",
     period: "2025",
     cover: "/images/pf-cover.png",
   },
@@ -49,6 +50,7 @@ const work: WorkItem[] = [
     result: [
       "Designed a multi-platform art ecosystem (desktop, mobile, Meta Quest, Apple Vision Pro) driving $1M+ in art sales.",
     ],
+    href: "https://vortic.art/discover",
     period: "2024",
     cover: "/images/avp-cover.png",
   },
@@ -67,6 +69,7 @@ const work: WorkItem[] = [
     result: [
       'Led UX for "The Gates" AR experience in Central Park, NYC, commissioned by Bloomberg Philanthropies, attracting ~50,000+ visitors over its month-long run.',
     ],
+    href: "https://christojeanneclaude.net/thegates20/",
     period: "2025",
     cover: "/images/gates-cover.png",
   },
