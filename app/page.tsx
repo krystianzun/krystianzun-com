@@ -125,7 +125,7 @@ export default function Home() {
               </a>{" "}
               or <InlineEmail />.
             </p>
-            <p className="font-medium">
+            <p>
               Check out some of my{" "}
               <a
                 href="https://tinyurl.com/kzportfolio26"
