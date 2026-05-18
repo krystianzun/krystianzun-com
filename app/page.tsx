@@ -1,13 +1,11 @@
 "use client";
 
 import Footer from "@/components/Footer";
-import Projects from "./_components/Projects";
 import Engagement from "./_components/Engagement";
 import Writing from "./_components/Writing";
 import Work from "./_components/Work";
 import Image from "next/image";
 import { useState } from "react";
-import TiltCard from "@/components/TiltCard";
 
 function InlineEmail() {
   const [hovering, setHovering] = useState(false);

@@ -1,5 +1,3 @@
-import CopyText from "@/components/CopyText";
-
 interface ProjectItem {
   title: string;
   href: string;
@@ -99,11 +97,7 @@ export default function Projects() {
         <span className="group text-heading">
           <span>&nbsp;</span>
           <span className="border-b-2 border-border hover:border-heading cursor-pointer inline-block font-medium">
-            <CopyText
-              text="krystian.zun@gmail.com"
-              displayText="krystian.zun@gmail.com"
-              hoverMessage="Click to copy"
-            />
+            <a href="mailto:krystian.zun@gmail.com">krystian.zun@gmail.com</a>
           </span>
         </span>
       </p>
