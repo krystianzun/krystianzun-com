@@ -44,7 +44,7 @@ export default function TiltCard({
     <div
       ref={cardRef}
       className={className}
-      style={{ transition: "transform 0.2s ease-out", willChange: "transform" }}
+      style={{ transition: "transform 0.3s ease-out" }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >

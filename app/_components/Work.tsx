@@ -194,7 +194,7 @@ function WorkRow({
   );
 
   return (
-    <div className="border-b border-border">
+    <div className="border-b border-border group-hover/list:opacity-30 hover:!opacity-100 transition-opacity duration-200">
       {href ? (
         <a href={href} target="_blank" rel="noopener noreferrer">
           {inner}
