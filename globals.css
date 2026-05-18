@@ -64,8 +64,10 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  .profile-flip-container:hover .profile-flipper {
-    transform: rotateY(180deg);
+  @media (hover: hover) {
+    .profile-flip-container:hover .profile-flipper {
+      transform: rotateY(180deg);
+    }
   }
 
   .profile-front,
@@ -95,8 +97,17 @@
       text-decoration-color 0.2s ease;
   }
 
-  .link-muted:hover {
-    color: var(--color-secondary);
-    text-decoration-color: var(--color-secondary);
+  @media (hover: hover) {
+    .link-muted:hover {
+      color: var(--color-secondary);
+      text-decoration-color: var(--color-secondary);
+    }
+  }
+
+  @media (hover: none) {
+    .group\/list > * {
+      opacity: 1 !important;
+      transition: none !important;
+    }
   }
 }

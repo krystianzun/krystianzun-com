@@ -13,7 +13,7 @@ export default function TiltCard({
 
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     const card = cardRef.current;
-    if (!card) return;
+    if (!card || !window.matchMedia("(hover: hover)").matches) return;
 
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
