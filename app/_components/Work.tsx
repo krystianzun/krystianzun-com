@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import TiltCard from "@/components/TiltCard";
+import { useState } from "react";
 
 interface WorkParty {
   name: string;
@@ -174,7 +175,14 @@ function WorkRow({
   period,
   cover,
   coverHover,
-}: WorkItem) {
+  dimmed,
+  onMouseEnter,
+  onMouseLeave,
+}: WorkItem & {
+  dimmed: boolean;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
+}) {
   const inner = (
     <div className="py-4">
       <WorkCover cover={cover} coverHover={coverHover} title={title} />
@@ -221,7 +229,12 @@ function WorkRow({
   );
 
   return (
-    <div className="border-b border-border group-hover/list:opacity-30 hover:!opacity-100 transition-opacity duration-200">
+    <div
+      className="border-b border-border transition-opacity duration-200"
+      style={{ opacity: dimmed ? 0.3 : 1 }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       {href ? (
         <a href={href} target="_blank" rel="noopener noreferrer">
           {inner}
@@ -234,12 +247,20 @@ function WorkRow({
 }
 
 export default function Work() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <section className="mb-16">
       <h3 className="pb-2 text-muted font-medium">Impact</h3>
-      <div className="group/list">
-        {work.map((item) => (
-          <WorkRow key={item.title + item.company} {...item} />
+      <div>
+        {work.map((item, i) => (
+          <WorkRow
+            key={item.title}
+            {...item}
+            dimmed={hoveredIndex !== null && hoveredIndex !== i}
+            onMouseEnter={() => setHoveredIndex(i)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          />
         ))}
       </div>
     </section>

@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 interface EngagementItem {
   title: string;
   href: string;
@@ -42,14 +46,26 @@ function EngagementRow({
   date,
   description,
   isNew,
-}: EngagementItem) {
+  dimmed,
+  onMouseEnter,
+  onMouseLeave,
+}: EngagementItem & {
+  dimmed: boolean;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
+}) {
   return (
-    <div className="border-b border-border">
+    <div
+      className="border-b border-border transition-opacity duration-200"
+      style={{ opacity: dimmed ? 0.3 : 1 }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-start justify-between py-2.5 transition-opacity duration-250 group-hover/list:opacity-30 hover:!opacity-100"
+        className="flex items-start justify-between py-2.5"
       >
         <div className="flex flex-col gap-0.5">
           <div className="flex items-start gap-2">
@@ -71,12 +87,20 @@ function EngagementRow({
 }
 
 export default function Engagement() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <section className="mb-16">
       <h3 className="pb-2 text-muted font-medium">Engagements</h3>
-      <div className="group/list">
-        {engagements.map((item) => (
-          <EngagementRow key={item.title} {...item} />
+      <div>
+        {engagements.map((item, i) => (
+          <EngagementRow
+            key={item.title}
+            {...item}
+            dimmed={hoveredIndex !== null && hoveredIndex !== i}
+            onMouseEnter={() => setHoveredIndex(i)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          />
         ))}
       </div>
     </section>
