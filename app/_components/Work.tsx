@@ -29,30 +29,28 @@ const work: WorkItem[] = [
       color: "#7C3AED",
     },
     result: [
-      "Led a revamp of the onboarding, introducing hyper-personalised flows.",
-      "Increased Paid Membership Conversion by +31% ",
-      "Free Trial Conversion by +25%.",
+      "Led a revamp of the onboarding, introducing hyper-personalised flows that increased Paid Membership Conversion by +31% and Free Trial Conversion by +25%.",
     ],
-    period: "12.2025",
+    period: "2025",
     cover: "/images/pf-cover.png",
   },
   {
     title: "World-class exhibitions anywhere in the world",
     company: {
-      name: "FitXR",
-      logo: "/images/illit-magnetic.jpg",
+      name: "Superbright",
+      logo: "/images/superbright-logo.jpg",
       color: "#7C3AED",
     },
     collaborator: {
-      name: "In-house",
-      logo: "/images/lisaRockstar.jpg",
+      name: "Vortic",
+      logo: "/images/vortic-logo.jpg",
       color: "#1E40AF",
     },
     result: [
       "Designed a multi-platform art ecosystem (desktop, mobile, Meta Quest, Apple Vision Pro) driving $1M+ in art sales.",
     ],
     period: "2024",
-    cover: "/images/positive-friction-cover.png",
+    cover: "/images/avp-cover.png",
   },
 ];
 
