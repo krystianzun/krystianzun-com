@@ -1,30 +1,8 @@
 "use client";
 
-import { useState } from "react";
-
-interface WritingItem {
-  title: string;
-  href: string;
-  date: string;
-  description?: string;
-  isNew?: boolean;
-}
-
-const writings: WritingItem[] = [
-  {
-    title:
-      "From Idea to Revenue: How I Built XR Jobs Board With 0 Technical Experience",
-    href: "https://substack.com/@krystianzun/p-169737381",
-    date: "08.2025",
-    isNew: false,
-  },
-  {
-    title: "Why product design matters at an API company",
-    href: "https://duffel.com/blog/why-product-design-matters-at-an-api-company",
-    date: "08.2022",
-    isNew: false,
-  },
-];
+import { writings, type WritingItem } from "@/app/_data/writing";
+import { useHoverDim } from "./useHoverDim";
+import type { PointerEvent } from "react";
 
 function WritingRow({
   title,
@@ -33,19 +11,19 @@ function WritingRow({
   description,
   isNew,
   dimmed,
-  onEnter,
-  onLeave,
+  onPointerEnter,
+  onPointerLeave,
 }: WritingItem & {
   dimmed: boolean;
-  onEnter: () => void;
-  onLeave: () => void;
+  onPointerEnter: (e: PointerEvent) => void;
+  onPointerLeave: (e: PointerEvent) => void;
 }) {
   return (
     <div
       className="border-b border-border transition-opacity duration-200"
       style={{ opacity: dimmed ? 0.3 : 1 }}
-      onPointerEnter={(e) => e.pointerType === "mouse" && onEnter()}
-      onPointerLeave={(e) => e.pointerType === "mouse" && onLeave()}
+      onPointerEnter={onPointerEnter}
+      onPointerLeave={onPointerLeave}
     >
       <a
         href={href}
@@ -73,7 +51,7 @@ function WritingRow({
 }
 
 export default function Writing() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { isDimmed, bind } = useHoverDim();
 
   return (
     <section className="mb-16">
@@ -83,9 +61,8 @@ export default function Writing() {
           <WritingRow
             key={item.title}
             {...item}
-            dimmed={hoveredIndex !== null && hoveredIndex !== i}
-            onEnter={() => setHoveredIndex(i)}
-            onLeave={() => setHoveredIndex(null)}
+            dimmed={isDimmed(i)}
+            {...bind(i)}
           />
         ))}
       </div>
