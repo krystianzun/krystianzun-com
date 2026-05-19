@@ -1,39 +1,10 @@
-"use client";
-
 import Footer from "@/components/Footer";
+import InlineEmail from "@/components/InlineEmail";
 import Engagement from "./_components/Engagement";
 import Writing from "./_components/Writing";
 import Work from "./_components/Work";
 import Image from "next/image";
-import { useState } from "react";
-
-function InlineEmail() {
-  const [hovering, setHovering] = useState(false);
-  const [copied, setCopied] = useState(false);
-
-  const handleClick = () => {
-    navigator.clipboard.writeText("krystian.zun@gmail.com").then(() => {
-      setCopied(true);
-      setHovering(false);
-      setTimeout(() => setCopied(false), 1500);
-    });
-  };
-
-  return (
-    <span
-      className="link-muted cursor-pointer"
-      onMouseEnter={() => !copied && setHovering(true)}
-      onMouseLeave={() => setHovering(false)}
-      onClick={handleClick}
-    >
-      {copied
-        ? "Copied!"
-        : hovering
-          ? "Click to copy"
-          : "krystian.zun@gmail.com"}
-    </span>
-  );
-}
+import { profile } from "./_data/profile";
 
 export default function Home() {
   return (
@@ -45,8 +16,8 @@ export default function Home() {
               <div className="profile-flipper">
                 <div className="profile-front">
                   <Image
-                    src="/images/kz-profile.jpeg"
-                    alt="Krystian Zun"
+                    src={profile.images.front}
+                    alt={profile.name}
                     width={48}
                     height={48}
                     className="rounded-full"
@@ -54,7 +25,7 @@ export default function Home() {
                 </div>
                 <div className="profile-back">
                   <Image
-                    src="/images/duckie.png"
+                    src={profile.images.back}
                     alt="Duckie"
                     width={48}
                     height={48}
@@ -64,7 +35,7 @@ export default function Home() {
               </div>
             </div>
             <div className="grid gap-0.5 font-medium">
-              <h1 className="text-primary">Krystian Zun</h1>
+              <h1 className="text-primary">{profile.name}</h1>
               <div className="text-muted">
                 0
                 <svg
@@ -78,7 +49,7 @@ export default function Home() {
                     clipRule="evenodd"
                   />
                 </svg>
-                1 Product Designer, Builder
+                1 {profile.title}
               </div>
             </div>
           </header>
@@ -95,11 +66,12 @@ export default function Home() {
             <p>
               I currently work at{" "}
               <a
-                href="https://www.meta.com/en-gb/experiences/fitxr/2327205800645550/"
+                href={profile.currentWork.href}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="link-muted"
               >
-                FitXR
+                {profile.currentWork.company}
               </a>
               , where I’m focused on bringing AI into the day-to-day design
               workflows.
@@ -107,35 +79,39 @@ export default function Home() {
             <p>
               You can find me on{" "}
               <a
-                href="https://www.linkedin.com/in/krystianzun/"
+                href={profile.socials.linkedin}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="link-muted"
               >
                 LinkedIn
               </a>
               ,{" "}
               <a
-                href="https://x.com/krystianzun"
+                href={profile.socials.twitter}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="link-muted"
               >
                 X
               </a>{" "}
-              or <InlineEmail />.
+              or <InlineEmail email={profile.email} />.
             </p>
             <p>
               Check out some of my{" "}
               <a
-                href="https://tinyurl.com/kzportfolio26"
+                href={profile.portfolio}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="link-muted"
               >
                 work
               </a>{" "}
               and{" "}
               <a
-                href="/Krystian Zun - Resume.pdf"
+                href={profile.resume}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="link-muted"
               >
                 resume
