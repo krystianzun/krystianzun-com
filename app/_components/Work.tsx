@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import TiltCard from "@/components/TiltCard";
-import { useState } from "react";
+import type { PointerEvent } from "react";
 import { work, type WorkItem } from "@/app/_data/work";
+import { useHoverDim } from "./useHoverDim";
 
 function LogoCircle({
   src,
@@ -89,12 +90,12 @@ function WorkRow({
   cover,
   coverHover,
   dimmed,
-  onEnter,
-  onLeave,
+  onPointerEnter,
+  onPointerLeave,
 }: WorkItem & {
   dimmed: boolean;
-  onEnter: () => void;
-  onLeave: () => void;
+  onPointerEnter: (e: PointerEvent) => void;
+  onPointerLeave: (e: PointerEvent) => void;
 }) {
   const inner = (
     <div className="py-4">
@@ -145,8 +146,8 @@ function WorkRow({
     <div
       className="border-b border-border transition-opacity duration-200"
       style={{ opacity: dimmed ? 0.3 : 1 }}
-      onPointerEnter={(e) => e.pointerType === "mouse" && onEnter()}
-      onPointerLeave={(e) => e.pointerType === "mouse" && onLeave()}
+      onPointerEnter={onPointerEnter}
+      onPointerLeave={onPointerLeave}
     >
       {href ? (
         <a href={href} target="_blank" rel="noopener noreferrer">
@@ -160,7 +161,7 @@ function WorkRow({
 }
 
 export default function Work() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { isDimmed, bind } = useHoverDim();
 
   return (
     <section className="mb-16">
@@ -170,9 +171,8 @@ export default function Work() {
           <WorkRow
             key={item.title}
             {...item}
-            dimmed={hoveredIndex !== null && hoveredIndex !== i}
-            onEnter={() => setHoveredIndex(i)}
-            onLeave={() => setHoveredIndex(null)}
+            dimmed={isDimmed(i)}
+            {...bind(i)}
           />
         ))}
       </div>

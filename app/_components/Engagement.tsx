@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { engagements, type EngagementItem } from "@/app/_data/engagements";
+import { useHoverDim } from "./useHoverDim";
+import type { PointerEvent } from "react";
 
 function EngagementRow({
   title,
@@ -10,19 +11,19 @@ function EngagementRow({
   description,
   isNew,
   dimmed,
-  onEnter,
-  onLeave,
+  onPointerEnter,
+  onPointerLeave,
 }: EngagementItem & {
   dimmed: boolean;
-  onEnter: () => void;
-  onLeave: () => void;
+  onPointerEnter: (e: PointerEvent) => void;
+  onPointerLeave: (e: PointerEvent) => void;
 }) {
   return (
     <div
       className="border-b border-border transition-opacity duration-200"
       style={{ opacity: dimmed ? 0.3 : 1 }}
-      onPointerEnter={(e) => e.pointerType === "mouse" && onEnter()}
-      onPointerLeave={(e) => e.pointerType === "mouse" && onLeave()}
+      onPointerEnter={onPointerEnter}
+      onPointerLeave={onPointerLeave}
     >
       <a
         href={href}
@@ -50,7 +51,7 @@ function EngagementRow({
 }
 
 export default function Engagement() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { isDimmed, bind } = useHoverDim();
 
   return (
     <section className="mb-16">
@@ -60,9 +61,8 @@ export default function Engagement() {
           <EngagementRow
             key={item.title}
             {...item}
-            dimmed={hoveredIndex !== null && hoveredIndex !== i}
-            onEnter={() => setHoveredIndex(i)}
-            onLeave={() => setHoveredIndex(null)}
+            dimmed={isDimmed(i)}
+            {...bind(i)}
           />
         ))}
       </div>
