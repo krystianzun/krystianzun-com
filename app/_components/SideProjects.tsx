@@ -12,14 +12,14 @@ import { useHoverDim } from "./useHoverDim";
 const STATUS_LABEL: Record<SideProjectStatus, string> = {
   active: "Active",
   hiatus: "On Hiatus",
-  cancelled: "Cancelled",
+  inactive: "Inactive",
   completed: "Completed",
 };
 
 const STATUS_CLASS: Record<SideProjectStatus, string> = {
   active: "bg-green-100 text-green-700",
   hiatus: "bg-amber-100 text-amber-700",
-  cancelled: "bg-gray-100 text-gray-600",
+  inactive: "bg-gray-100 text-gray-600",
   completed: "bg-cyan-100 text-cyan-600",
 };
 

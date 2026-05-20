@@ -1,8 +1,4 @@
-export type SideProjectStatus =
-  | "active"
-  | "hiatus"
-  | "cancelled"
-  | "completed";
+export type SideProjectStatus = "active" | "hiatus" | "inactive" | "completed";
 
 export interface SideProjectItem {
   title: string;
@@ -18,7 +14,7 @@ export const sideProjects: SideProjectItem[] = [
     href: "https://www.xrjobsboard.com/",
     description:
       "Stop wasting time searching through countless job portals. All XR jobs and opportunities in one place.",
-    status: "hiatus",
+    status: "inactive",
   },
   {
     title: "XR Design Learning Roadmap",
