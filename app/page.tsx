@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import InlineEmail from "@/components/InlineEmail";
 import Engagement from "./_components/Engagement";
+import SideProjects from "./_components/SideProjects";
 import Writing from "./_components/Writing";
 import Work from "./_components/Work";
 import Image from "next/image";
@@ -121,6 +122,7 @@ export default function Home() {
           </div>
         </article>
         <Work />
+        <SideProjects />
         <Engagement />
         <Writing />
       </div>
