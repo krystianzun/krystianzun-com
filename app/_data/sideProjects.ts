@@ -28,13 +28,13 @@ export const sideProjects: SideProjectItem[] = [
     href: "https://discord.com/invite/eUKt8mFqnb",
     description:
       "Community for all into XR, Design, 3D, AI and generally emerging and creative tech with weekly hang outs, world hopping sessions and themed discussions.",
-    status: "active",
+    status: "hiatus",
   },
   {
     title: "Touch Some Grass*",
     href: "https://lu.ma/touchsomegrass",
     description:
       "Fun, informal meet-up where we chat about XR and creative tech in the great outdoors, immersed in the best reality (nature) ٩( ✩'ω'✩ )و",
-    status: "active",
+    status: "hiatus",
   },
 ];
