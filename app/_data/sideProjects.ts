@@ -35,5 +35,6 @@ export const sideProjects: SideProjectItem[] = [
     description:
       "XR, creative tech meetups in the great outdoors of NYC and LDN.",
     status: "hiatus",
+    logo: "/images/tsg-logo.png",
   },
 ];
