@@ -12,8 +12,7 @@ export const sideProjects: SideProjectItem[] = [
   {
     title: "XR Jobs Board",
     href: "https://www.xrjobsboard.com/",
-    description:
-      "Stop wasting time searching through countless job portals. All XR jobs and opportunities in one place.",
+    description: "All XR jobs and opportunities in one place.",
     status: "inactive",
   },
   {
@@ -27,14 +26,14 @@ export const sideProjects: SideProjectItem[] = [
     title: "Design Futures",
     href: "https://discord.com/invite/eUKt8mFqnb",
     description:
-      "Community for all into XR, Design, 3D, AI and generally emerging and creative tech with weekly hang outs, world hopping sessions and themed discussions.",
+      "Community for all into XR, Design, 3D, AI and emerging tech with weekly hang outs.",
     status: "hiatus",
   },
   {
     title: "Touch Some Grass*",
     href: "https://lu.ma/touchsomegrass",
     description:
-      "Fun, informal meet-up where we chat about XR and creative tech in the great outdoors, immersed in the best reality (nature) ٩( ✩'ω'✩ )و",
+      "XR, creative tech meetups in the great outdoors of NYC and LDN.",
     status: "hiatus",
   },
 ];
